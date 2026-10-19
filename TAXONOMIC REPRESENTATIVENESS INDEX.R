@@ -1,5 +1,5 @@
 # ==============================================================================
-# TAXONOMIC REPRESENTATIVENESS INDEX (TRi) - FULL PIPELINE
+# TAXONOMIC REPRESENTATIVENESS INDEX (TRi)
 # ==============================================================================
 # TRi = CSi / CSe x 100
 #   CSe = species documented by AFD as occurring in the study region
