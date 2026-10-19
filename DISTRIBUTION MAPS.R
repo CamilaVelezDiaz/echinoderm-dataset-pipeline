@@ -1,5 +1,6 @@
 # ==============================================================================
 # DISTRIBUTION MAPS
+# Camila Velez | JCU Marine Biology MSc | Thesis Chapter — Analysis
 # ==============================================================================
 # Map 1: all occurrence records, coloured by depth zone
 # Map 2: species richness AND sampling density per grid cell
