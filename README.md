@@ -23,7 +23,7 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 
 ## Data sources 
 
-The pipeline expects 13 raw source files that must be downloaded separately. The exact download dates used to produce the deposited dataset are listed in Table 1 of the Scientific Data descriptor. Sources include:
+The pipeline expects 13 raw source files that must be downloaded separately. The exact download dates used to produce the deposited dataset are listed in Table 1 of the Biodiversity Data Journal descriptor. Sources include:
 
     Atlas of Living Australia (ALA) — 3 downloads
     Global Biodiversity Information Facility (GBIF) — 2 downloads
@@ -45,7 +45,7 @@ The direct CMS exports supplied by QMT (2) and AM (1) were used with written per
     cd echinoderm-thesis-pipeline
     ```
 
-2. **Download the source datasets** into a `data-raw/` folder (see Table 1 of the *Scientific Data* descriptor for URLs and dates).
+2. **Download the source datasets** into a `data-raw/` folder (see Table 1 of the *Biodiversity Data Journal* descriptor for URLs and dates).
 
 3. **Restore the package environment** (optional but recommended)
 
@@ -87,7 +87,7 @@ Companion resources:
 
     Dataset (Darwin Core Archive): https://doi.org/<<< Zenodo dataset DOI >>>
     Dataset (OBIS/GBIF): https://doi.org/<<< OBIS-issued DOI >>>
-    Scientific Data Data Descriptor: https://doi.org/<<< Scientific Data DOI >>>
+    iodiversity Data Journal Data Descriptor: https://doi.org/<<< iodiversity Data Journal DOI >>>
 
 ## Licence
 
