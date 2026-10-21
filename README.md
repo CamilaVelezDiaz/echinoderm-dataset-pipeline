@@ -2,7 +2,7 @@
 
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
 
-R workflow for the integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea. Produces a curated, quality-controlled, Darwin Core Archive of 43,470 echinoderm occurrence records from 13 source datasets, published to OBIS / ALA / GBIF and described in a Scientific Data Data Descriptor.
+R workflow for the integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea. Produces a curated, quality-controlled, Darwin Core Archive of 43,470 echinoderm occurrence records from 13 source datasets, published to OBIS / ALA / GBIF and described in Biodiversity Data Journal: Data Descriptor.
 
 ## Contents 
 
