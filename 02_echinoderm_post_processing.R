@@ -110,15 +110,46 @@ cat("Case duplicates remaining:",
 
 # =============================================================================
 # SECTION 1: COORDINATE FIXES
-#   OBIS is excluded from the majority-vote pool because OBIS systematically
-#   re-projects coordinates from its contributing datasets, sometimes assigning
-#   slightly different decimal precision than the original source. Including OBIS
-#   in the vote would unfairly penalise correct coordinates that happen to differ
-#   at the 3rd decimal place from an OBIS re-projection of the same point.
-#   OBIS coordinates are retained as a fallback only when no other source has data.
+# SECTION 1a: COORDINATE CONFLICT RESOLUTION  (replaces the previous Section 1a)
+#
+#   Coordinates are NEVER averaged. Each record's best_latitude / best_longitude
+#   is a coordinate pair that was actually reported by one contributing source
+#   (or by documented manual review), so no location is created at which no
+#   specimen was recorded.
+#
+#   Disagreement between sources is measured as the largest difference in
+#   latitude OR longitude among the sources reporting a coordinate pair, and is
+#   resolved by magnitude:
+#
+#     < COORD_PRECISION_THRESHOLD_DEG   consistent_within_precision
+#         Rounding / DMS-conversion / minor recording differences. A reported
+#         pair is retained: coordinates reported to >= 3 decimals are preferred,
+#         then the source with the highest provenance (SOURCE_PRIORITY).
+#
+#     >= threshold                      majority_vote
+#         Source pairs rounded to 3 decimals are voted on. A pair is retained
+#         only if it is supported by >= 2 sources AND by more than half of the
+#         voting sources. The reported (unrounded) pair from the
+#         highest-provenance supporting source is kept. OBIS does not vote:
+#         it re-projects coordinates from its contributing datasets and can
+#         differ at the 3rd decimal from the original source. OBIS is retained
+#         only when it is the sole source with coordinates.
+#
+#     no majority                       manual_review_resolved / unresolved_conflict
+#         Records are written to coord_conflicts_to_review.csv. A decision
+#         (coordinate checked against original locality information, verbatim
+#         coordinates, GeoNames, gazetteers, maps, cruise tracks) is applied from
+#         manual_coord_overrides below or from coord_manual_review_decisions.csv.
+#         Records without a decision stay "unresolved_conflict": best_latitude
+#         and best_longitude are left NA (not guessed) and per-source values
+#         remain available in decimalLatitude__* / decimalLongitude__*.
 # =============================================================================
 
 cat("── Section 1a: Coordinate conflict resolution ──\n")
+
+# Differences below this are treated as precision / rounding differences.
+# Single parameter: change here to re-run with a different threshold.
+COORD_PRECISION_THRESHOLD_DEG <- 0.001
 
 depth_min_cols  <- names(echino_wide)[str_detect(names(echino_wide), "^minimumDepthInMeters__")]
 depth_max_cols  <- names(echino_wide)[str_detect(names(echino_wide), "^maximumDepthInMeters__")]
@@ -132,170 +163,241 @@ lat_mat_num <- echino_wide %>%
   select(all_of(lat_cols)) %>%
   mutate(across(everything(), ~ suppressWarnings(as.numeric(.x))))
 
-conflict_ranges <- apply(as.matrix(lat_mat_num), 1, function(row) {
-  vals <- na.omit(row)
-  if (length(vals) < 2) return(NA_real_)
-  diff(range(vals))
-})
-
-cat("Coordinate conflict magnitude:\n")
-tibble(lat_range = conflict_ranges) %>%
-  filter(!is.na(lat_range)) %>%
-  summarise(
-    n_with_multiple_coords = n(),
-    median_range_deg       = round(median(lat_range), 6),
-    n_under_0001            = sum(lat_range < 0.0001),
-    pct_under_0001          = round(mean(lat_range < 0.0001) * 100, 1),
-    n_under_001             = sum(lat_range < 0.001),
-    pct_under_001           = round(mean(lat_range < 0.001)  * 100, 1),
-    n_under_05              = sum(lat_range < 0.5),
-    pct_under_05            = round(mean(lat_range < 0.5)  * 100, 1),
-    n_over_1deg             = sum(lat_range > 1),
-    pct_over_1deg           = round(mean(lat_range > 1)      * 100, 1)
-  ) %>% print()
-
-gbif_lat_col <- "decimalLatitude__GBIF_echinodermata"
-gbif_lon_col <- "decimalLongitude__GBIF_echinodermata"
-obis_lat_col <- "decimalLatitude__OBIS"
-obis_lon_col <- "decimalLongitude__OBIS"
-
-vote_lat_cols <- setdiff(lat_cols, obis_lat_col)
-vote_lon_cols <- setdiff(lon_cols, obis_lon_col)
-
-modal_coord <- function(row_vals) {
-  vals <- round(na.omit(as.numeric(row_vals)), 3)
-  if (length(vals) == 0) return(NA_real_)
-  tbl <- sort(table(vals), decreasing = TRUE)
-  as.numeric(names(tbl)[1])
-}
-
-resolve_coord <- function(lat_mat_vote, lon_mat_vote,
-                          gbif_lat_vec, gbif_lon_vec,
-                          lat_mat_all, lon_mat_all,
-                          conflict_flag) {
-  n <- nrow(lat_mat_vote)
-  best_lat <- numeric(n)
-  best_lon <- numeric(n)
-  
-  for (i in seq_len(n)) {
-    if (!isTRUE(conflict_flag[i])) {
-      best_lat[i] <- mean(as.numeric(lat_mat_all[i, ]), na.rm = TRUE)
-      best_lon[i] <- mean(as.numeric(lon_mat_all[i, ]), na.rm = TRUE)
-    } else {
-      ml <- modal_coord(lat_mat_vote[i, ])
-      mn <- modal_coord(lon_mat_vote[i, ])
-      
-      lat_votes <- round(na.omit(as.numeric(lat_mat_vote[i, ])), 3)
-      lon_votes <- round(na.omit(as.numeric(lon_mat_vote[i, ])), 3)
-      lat_n_agree <- sum(lat_votes == ml, na.rm = TRUE)
-      lon_n_agree <- sum(lon_votes == mn, na.rm = TRUE)
-      
-      if (!is.na(ml) && lat_n_agree >= 2) {
-        best_lat[i] <- ml
-      } else if (!is.na(gbif_lat_vec[i])) {
-        best_lat[i] <- gbif_lat_vec[i]
-      } else {
-        best_lat[i] <- mean(as.numeric(lat_mat_all[i, ]), na.rm = TRUE)
-      }
-      
-      if (!is.na(mn) && lon_n_agree >= 2) {
-        best_lon[i] <- mn
-      } else if (!is.na(gbif_lon_vec[i])) {
-        best_lon[i] <- gbif_lon_vec[i]
-      } else {
-        best_lon[i] <- mean(as.numeric(lon_mat_all[i, ]), na.rm = TRUE)
-      }
-    }
-  }
-  
-  list(
-    lat = if_else(is.nan(best_lat), NA_real_, best_lat),
-    lon = if_else(is.nan(best_lon), NA_real_, best_lon)
-  )
-}
-
 lon_mat_num <- echino_wide %>%
   select(all_of(lon_cols)) %>%
   mutate(across(everything(), ~ suppressWarnings(as.numeric(.x))))
 
-coord_conflict_flag <- conflict_ranges > 0.5 & !is.na(conflict_ranges)
+# Latitude and longitude matrices with identical source order, and a coordinate
+# only counts if the source reports BOTH latitude and longitude.
+coord_sources <- intersect(str_remove(lat_cols, "^decimalLatitude__"),
+                           str_remove(lon_cols, "^decimalLongitude__"))
+lat_mat <- as.matrix(lat_mat_num)[, paste0("decimalLatitude__",  coord_sources), drop = FALSE]
+lon_mat <- as.matrix(lon_mat_num)[, paste0("decimalLongitude__", coord_sources), drop = FALSE]
+colnames(lat_mat) <- coord_sources
+colnames(lon_mat) <- coord_sources
 
-lat_mat_vote_df <- echino_wide %>%
-  select(all_of(vote_lat_cols)) %>%
-  mutate(across(everything(), ~ suppressWarnings(as.numeric(.x))))
+valid_pair <- !is.na(lat_mat) & !is.na(lon_mat)
+lat_mat[!valid_pair] <- NA_real_
+lon_mat[!valid_pair] <- NA_real_
+n_coord_sources <- rowSums(valid_pair)
 
-lon_mat_vote_df <- echino_wide %>%
-  select(all_of(vote_lon_cols)) %>%
-  mutate(across(everything(), ~ suppressWarnings(as.numeric(.x))))
+# Cells that hold text but did not parse as a number (e.g. a source with two
+# different values joined by ";") are treated as "no coordinate" for that source.
+raw_cells <- as.matrix(echino_wide[c(lat_cols, lon_cols)])
+num_cells <- as.matrix(cbind(lat_mat_num, lon_mat_num))
+n_unparsed <- sum(!is.na(raw_cells) & nzchar(as.character(raw_cells)) & is.na(num_cells))
+if (n_unparsed > 0) {
+  cat("NOTE:", n_unparsed, "per-source coordinate cell(s) could not be parsed as numbers",
+      "(e.g. several values joined by ';') and were treated as missing for that source.\n")
+}
 
-gbif_lat_vec <- suppressWarnings(as.numeric(echino_wide[[gbif_lat_col]]))
-gbif_lon_vec <- suppressWarnings(as.numeric(echino_wide[[gbif_lon_col]]))
+row_range <- function(m) {
+  apply(m, 1, function(r) {
+    v <- r[!is.na(r)]
+    if (length(v) < 2) NA_real_ else max(v) - min(v)
+  })
+}
+coord_range_all <- pmax(row_range(lat_mat), row_range(lon_mat))
 
-resolved <- resolve_coord(
-  lat_mat_vote = lat_mat_vote_df,
-  lon_mat_vote = lon_mat_vote_df,
-  gbif_lat_vec = gbif_lat_vec,
-  gbif_lon_vec = gbif_lon_vec,
-  lat_mat_all  = lat_mat_num,
-  lon_mat_all  = lon_mat_num,
-  conflict_flag = coord_conflict_flag
+cat("Coordinate disagreement magnitude (max of latitude / longitude range):\n")
+tibble(rng = coord_range_all) %>%
+  filter(!is.na(rng)) %>%
+  summarise(
+    n_with_multiple_coords = n(),
+    median_range_deg       = round(median(rng), 6),
+    n_under_0001           = sum(rng < 0.0001),
+    n_under_threshold      = sum(rng < COORD_PRECISION_THRESHOLD_DEG),
+    pct_under_threshold    = round(mean(rng < COORD_PRECISION_THRESHOLD_DEG) * 100, 1),
+    n_over_threshold       = sum(rng >= COORD_PRECISION_THRESHOLD_DEG),
+    n_over_01deg           = sum(rng >= 0.1),
+    n_over_1deg            = sum(rng >= 1)
+  ) %>% print()
+
+# --- Source provenance (SOURCE_PRIORITY is defined at the top of this script) ---
+src_rank <- match(coord_sources, SOURCE_PRIORITY)
+src_rank[is.na(src_rank)] <- 99L
+is_obis  <- coord_sources == "OBIS"
+
+# Number of decimals in the reported value (15-significant-digit representation)
+count_decimals <- function(x) {
+  s   <- as.character(x)
+  dec <- ifelse(str_detect(s, "\\."), nchar(str_remove(s, "^[^.]*\\.")), 0L)
+  ifelse(str_detect(s, "[eE]"), 0L, dec)
+}
+
+# Among candidate sources (column indices) for record i: prefer coordinates
+# reported to >= 3 decimals, then the highest-provenance source.
+pick_source <- function(i, idx) {
+  dec <- pmin(count_decimals(lat_mat[i, idx]), count_decimals(lon_mat[i, idx]))
+  idx[order(dec < 3, src_rank[idx])[1]]
+}
+
+n_rec        <- nrow(echino_wide)
+best_lat     <- rep(NA_real_,      n_rec)
+best_lon     <- rep(NA_real_,      n_rec)
+coord_status <- rep(NA_character_, n_rec)
+coord_used   <- rep(NA_character_, n_rec)
+
+coord_status[n_coord_sources == 0] <- "no_coordinates"
+
+for (i in which(n_coord_sources >= 1)) {
+  idx    <- which(valid_pair[i, ])
+  chosen <- NA_integer_
+  
+  if (length(idx) == 1) {
+    chosen <- idx
+    coord_status[i] <- "single_source"
+    
+  } else if (coord_range_all[i] < COORD_PRECISION_THRESHOLD_DEG) {
+    chosen <- pick_source(i, idx)
+    coord_status[i] <- "consistent_within_precision"
+    
+  } else {
+    vote_idx <- idx[!is_obis[idx]]
+    if (length(vote_idx) >= 2) {
+      keys <- paste(round(lat_mat[i, vote_idx], 3), round(lon_mat[i, vote_idx], 3))
+      tab  <- table(keys)
+      top  <- max(tab)
+      if (top >= 2 && top > length(vote_idx) / 2 && sum(tab == top) == 1) {
+        chosen <- pick_source(i, vote_idx[keys == names(tab)[tab == top]])
+        coord_status[i] <- "majority_vote"
+      }
+    }
+    if (is.na(chosen)) coord_status[i] <- "needs_manual_review"
+  }
+  
+  if (!is.na(chosen)) {
+    best_lat[i]   <- lat_mat[i, chosen]
+    best_lon[i]   <- lon_mat[i, chosen]
+    coord_used[i] <- coord_sources[chosen]
+  }
+}
+
+echino_wide <- echino_wide %>%
+  select(-any_of(c("coord_conflict", "coord_range_deg", "coord_conflict_status",
+                   "coord_source_used", "coord_n_sources",
+                   "best_latitude", "best_longitude"))) %>%
+  mutate(
+    coord_conflict        = !is.na(coord_range_all) & coord_range_all >= COORD_PRECISION_THRESHOLD_DEG,
+    coord_range_deg       = round(coord_range_all, 6),
+    coord_n_sources       = as.integer(n_coord_sources),
+    coord_conflict_status = coord_status,
+    coord_source_used     = coord_used,
+    best_latitude         = best_lat,
+    best_longitude        = best_lon
+  )
+
+# --- Manual review ------------------------------------------------------------
+# Records with no majority are exported for individual review. Fill in
+# decision_latitude / decision_longitude / decision_basis in the exported file,
+# save the filled rows as coord_manual_review_decisions.csv, and re-run.
+# Decisions from the CSV take precedence over the ones recorded below.
+
+manual_coord_overrides <- tribble(
+  ~record_key,   ~decision_latitude, ~decision_longitude, ~decision_basis,
+  # Only two sources report coordinates (AM_direct, OBIS), ~715 km apart.
+  # verbatimLocality ("just north of North Direction Island, Great Barrier
+  # Reef") matches AM_direct (~14.7S, near Lizard Island); the OBIS coordinates
+  # (~21.2S, near Mackay) are inconsistent with this locality. AM_direct retained.
+  "CAT_J.5636",  -14.73,            145.5,               "verbatimLocality matches AM_direct coordinates; OBIS ~715 km away"
 )
 
-echino_wide <- echino_wide %>%
-  mutate(
-    coord_conflict  = coord_conflict_flag,
-    coord_range_deg = round(conflict_ranges, 6),
-    best_latitude   = resolved$lat,
-    best_longitude  = resolved$lon
-  )
+manual_decisions <- manual_coord_overrides
 
-# Manual override — CAT_J.5636
-# Only two sources report coordinates (AM_direct, OBIS), ~715 km apart; no
-# GBIF value is available to break the tie and iDigBio (listed in
-# sources_all) has no populated coordinates for this record, so the
-# automated logic above defaulted to averaging AM_direct and OBIS —
-# producing a point in open water consistent with neither source.
-# verbatimLocality ("just north of North Direction Island, Great Barrier
-# Reef") matches AM_direct's coordinates (~14.7°S, near Lizard Island); the
-# OBIS coordinates (~21.2°S, near Mackay) are inconsistent with this
-# locality. AM_direct is retained as authoritative.
-echino_wide <- echino_wide %>%
-  mutate(
-    best_latitude  = if_else(record_key == "CAT_J.5636", -14.73, best_latitude),
-    best_longitude = if_else(record_key == "CAT_J.5636", 145.5,  best_longitude)
-  )
+if (file.exists("coord_manual_review_decisions.csv")) {
+  file_decisions <- read_csv(
+    "coord_manual_review_decisions.csv", show_col_types = FALSE,
+    col_types = cols(.default = col_character())
+  ) %>%
+    mutate(decision_latitude  = suppressWarnings(as.numeric(decision_latitude)),
+           decision_longitude = suppressWarnings(as.numeric(decision_longitude))) %>%
+    filter(!is.na(decision_latitude), !is.na(decision_longitude))
+  if (!"decision_basis" %in% names(file_decisions)) file_decisions$decision_basis <- NA_character_
+  manual_decisions <- bind_rows(
+    file_decisions %>% select(record_key, decision_latitude, decision_longitude, decision_basis),
+    manual_coord_overrides
+  ) %>% distinct(record_key, .keep_all = TRUE)
+  cat("Manual review decisions read from coord_manual_review_decisions.csv:",
+      nrow(file_decisions), "\n")
+}
 
-cat("Records with meaningful coord conflict (>0.5°):",
-    sum(echino_wide$coord_conflict, na.rm = TRUE), "\n")
+stopifnot(
+  all(manual_decisions$decision_latitude  >= -90  & manual_decisions$decision_latitude  <= 90),
+  all(manual_decisions$decision_longitude >= -180 & manual_decisions$decision_longitude <= 180)
+)
 
+# Queue = every record the automated rules could not resolve (written BEFORE
+# decisions are applied, so the file always lists the full set to review)
 echino_wide %>%
-  filter(coord_conflict) %>%
-  select(record_key, primary_source, sources_all,
+  filter(coord_conflict_status == "needs_manual_review") %>%
+  select(record_key, primary_source, sources_all, coord_range_deg,
+         any_of(c("verbatimLocality", "stateProvince", "country")),
          all_of(lat_cols), all_of(lon_cols), all_of(sciname_cols)) %>%
+  mutate(decision_latitude = NA_real_, decision_longitude = NA_real_,
+         decision_basis = NA_character_) %>%
   write_csv("coord_conflicts_to_review.csv")
 
-# Manual overrides — excluded from the automated majority/GBIF tally below
-# since they were resolved by individual review, not by either automated rule
-manual_coord_overrides <- c("CAT_J.5636")
+# Apply decisions; anything still undecided is flagged, not averaged or guessed
+dec_idx <- match(echino_wide$record_key, manual_decisions$record_key)
+applied <- echino_wide$coord_conflict_status %in% "needs_manual_review" & !is.na(dec_idx)
 
-conflicted_rows <- which(coord_conflict_flag & !(echino_wide$record_key %in% manual_coord_overrides))
-if (length(conflicted_rows) > 0) {
-  n_majority <- sum(sapply(conflicted_rows, function(i) {
-    ml <- modal_coord(lat_mat_vote_df[i, ])
-    lat_votes <- round(na.omit(as.numeric(lat_mat_vote_df[i, ])), 3)
-    !is.na(ml) && sum(lat_votes == ml, na.rm = TRUE) >= 2
-  }))
-  cat(sprintf(
-    "  Resolved by majority vote (>=2 sources agree): %d (%.0f%%)\n",
-    n_majority, n_majority / length(conflicted_rows) * 100
-  ))
-  cat(sprintf(
-    "  Resolved by GBIF fallback: %d (%.0f%%)\n",
-    length(conflicted_rows) - n_majority,
-    (length(conflicted_rows) - n_majority) / length(conflicted_rows) * 100
-  ))
+echino_wide <- echino_wide %>%
+  mutate(
+    best_latitude  = if_else(applied, manual_decisions$decision_latitude[dec_idx],  best_latitude),
+    best_longitude = if_else(applied, manual_decisions$decision_longitude[dec_idx], best_longitude),
+    coord_source_used = if_else(applied, "manual_review", coord_source_used),
+    coord_conflict_status = case_when(
+      applied ~ "manual_review_resolved",
+      coord_conflict_status == "needs_manual_review" ~ "unresolved_conflict",
+      TRUE ~ coord_conflict_status
+    )
+  )
+
+# CAT_J.5636 was resolved manually in earlier versions of this pipeline; make
+# sure a decision recorded for a record that the automated rules *did* resolve
+# is not silently ignored.
+ignored <- setdiff(manual_decisions$record_key,
+                   echino_wide$record_key[applied])
+if (length(ignored) > 0) {
+  cat("NOTE: manual decisions not applied (record not in the manual-review queue):",
+      paste(ignored, collapse = ", "), "\n")
 }
-cat("  Resolved by individual manual review:", length(manual_coord_overrides), "\n")
+
+# Full audit trail of every record whose sources disagreed by >= threshold
+echino_wide %>%
+  filter(coord_conflict) %>%
+  select(record_key, primary_source, sources_all, coord_range_deg,
+         coord_conflict_status, coord_source_used, best_latitude, best_longitude,
+         all_of(lat_cols), all_of(lon_cols)) %>%
+  write_csv("coord_conflict_log.csv")
+
+cat("\nCoordinate resolution status:\n")
+echino_wide %>% count(coord_conflict_status, sort = TRUE) %>% print()
+
+cat("Records with source disagreement >=", COORD_PRECISION_THRESHOLD_DEG, "deg:",
+    sum(echino_wide$coord_conflict, na.rm = TRUE), "\n")
+
+invalid_coords <-
+  echino_wide %>%
+  filter(
+    (!is.na(best_latitude)  & (best_latitude  < -90  | best_latitude  > 90)) |
+      (!is.na(best_longitude) & (best_longitude < -180 | best_longitude > 180))
+  )
+
+if (nrow(invalid_coords) > 0) {
+  warning(paste(nrow(invalid_coords), "records contain invalid final coordinates."))
+} else {
+  cat("✓ All resolved coordinates fall within valid latitude/longitude ranges.\n")
+}
+
+cat("\n── Coordinate resolution complete ──\n")
+cat("Precision threshold: <", COORD_PRECISION_THRESHOLD_DEG, "°\n", sep = "")
+cat("Coordinate averaging: NONE\n")
+cat("Majority voting: coordinate pairs rounded to 3 decimal places (OBIS excluded from vote)\n")
+cat("No-majority conflicts: manual review required\n")
+cat("Manual decisions applied:", sum(applied), "\n")
+cat("Unresolved conflicts remaining:",
+    sum(echino_wide$coord_conflict_status == "unresolved_conflict", na.rm = TRUE), "\n")
 # =============================================================================
 # SECTION 1b: COORDINATE RECOVERY (idigbio geoPoint + locality gazetteer)
 #  NOTE: recovered_coordinates.csv must be present in the working directory.
@@ -4062,7 +4164,11 @@ key_columns <- tribble(
   "sources_all", "List of all source datasets that reported this record, as a single delimited string", "Pipeline integration",
   "best_latitude", "Resolved decimal latitude", "Section 1a",
   "best_longitude", "Resolved decimal longitude", "Section 1a",
-  "coord_conflict", "TRUE if sources disagreed on coordinates by >1 degree", "Section 1a",
+  "coord_conflict", "TRUE if contributing sources disagreed on the coordinate pair by >= 0.001 degrees (largest latitude or longitude difference)", "Section 1a",
+  "coord_range_deg", "Largest latitude or longitude difference (degrees) among sources reporting a coordinate pair; NA if fewer than two sources", "Section 1a",
+  "coord_n_sources", "Number of sources reporting a latitude/longitude pair", "Section 1a",
+  "coord_conflict_status", "no_coordinates | single_source | consistent_within_precision | majority_vote | manual_review_resolved | unresolved_conflict (best_latitude/best_longitude are NA for unresolved_conflict)", "Section 1a",
+  "coord_source_used", "Source whose reported coordinate pair was retained in best_latitude/best_longitude (manual_review = individual review)", "Section 1a",
   "coord_recovered_flag", "TRUE if coordinates came from recovery (iDigBio geoPoint or gazetteer) rather than original pipeline", "Section 1b",
   "coord_recovery_method", "idigbio_geopoint_recovery (verified exact) or locality_gazetteer_geocoding (estimated, spot-checked)", "Section 1b",
   "coord_uncertainty_m", "Assigned coordinate uncertainty radius in metres for gazetteer-estimated records; NA for exact geoPoint recoveries", "Section 1b",
@@ -4783,4 +4889,4 @@ cat("  3. Deposit on Zenodo for an immediate citable DOI.\n")
 cat("  4. Submit through the OBIS Australia IPT (or ALA IPT);\n")
 cat("     federation to GBIF is automatic once accepted.\n")
 
-writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
+writeLines(capture.output(sessionInfo()), "sessionInfo_02.txt")
