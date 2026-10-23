@@ -54,16 +54,11 @@ library(rnaturalearth)
 # SOURCE PRIORITY (single source of truth)
 # =============================================================================
 # Used wherever a per-source conflict needs to be resolved by "trust the
-# highest-priority source" rather than by majority vote or a different rule
-# (e.g. echino_class direct resolution in Section 6j, best_basisOfRecord and
-# best_eventDate in Sections 3/4). Defined ONCE here so every consumer stays
-# in sync - previously this was redefined locally in Section 6j only, which
-# meant AM_direct (the highest-trust source per the name-conflict criteria
-# in Methods) was silently missing from echino_class resolution.
+# highest-priority source" rather than by majority vote or a different rule. 
 #
 # CIDARIS/AM direct museum CMS exports are ranked above the broad aggregators
 # (ALA/GBIF/OZCAM/iDigBio/OBIS), matching the source-trustworthiness
-# criterion already used for name-conflict resolution (Section 6e/Appendix C).
+# criterion already used for name-conflict resolution.
 # =============================================================================
 
 SOURCE_PRIORITY <- c(
@@ -110,7 +105,7 @@ cat("Case duplicates remaining:",
 
 # =============================================================================
 # SECTION 1: COORDINATE FIXES
-# SECTION 1a: COORDINATE CONFLICT RESOLUTION  (replaces the previous Section 1a)
+# SECTION 1a: COORDINATE CONFLICT RESOLUTION 
 #
 #   Coordinates are NEVER averaged. Each record's best_latitude / best_longitude
 #   is a coordinate pair that was actually reported by one contributing source
@@ -1521,8 +1516,7 @@ cat(sprintf("Records with best_basisOfRecord resolved: %d of %d (%.1f%%)\n",
 print(table(echino_wide$best_basisOfRecord))
 
 # =============================================================================
-# SECTION 5: DEPTH FIXES (COMPLETE, FINAL VERSION)
-# Camila Velez | JCU MMB | Phase 1
+# SECTION 5: DEPTH FIXES
 #
 # Steps:
 #   5a. GBIF midpoint-flattening exclusion 
@@ -1717,10 +1711,10 @@ cat("Records with depth:", sum(echino_wide$has_depth), "\n\n")
 #   the original Deep Slope bin held only 17 records, too few to support
 #   any statistical statement about that zone alone.
 #
-#     Continental Shelf   :    0 - 200 m
-#     Upper Slope         :  200 - 1000 m
-#     Lower Slope         : 1000 - 4000 m
-#     Abyssal             :  > 4000 m
+#     Continental Shelf: 0 - 200 m
+#     Upper Slope: 200 - 1000 m
+#     Lower Slope: 1000 - 4000 m
+#     Abyssal: > 4000 m
 # -----------------------------------------------------------------------------
 
 cat("── Adopting ecologically-grounded depth zones ──\n\n")
