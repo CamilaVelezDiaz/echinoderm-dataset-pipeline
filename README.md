@@ -66,8 +66,7 @@ The direct CMS exports supplied by QMT (2) and AM (1) were used with written per
 
     echino_wide.csv — the primary wide-format table (43,470 records)
     echino_wide_depth.csv — depth-bearing subset (24,669 records)
-    dwca_public_release/ — Darwin Core Archive (occurrence.txt, meta.xml, eml.xml)
-    echinoderm_dwca_public_release.zip — the packaged archive for OBIS/ALA/GBIF deposit
+    dwca_public_release/ — Darwin Core Archive (occurrence.txt, meta.xml, eml.xml, measurementorfact.txt)
 
 ## Reproducibility notes
 
@@ -106,4 +105,4 @@ The published integrated dataset is released under a Creative Commons Attributio
     Maria Camila Velez Diaz - mariacamila.velezdiaz@my.jcu.edu.au
 
 ## Acknowledgements
-We thank the Australian Museum (Claire Rowe), Queensland Museum Tropics (Stefano Borghi) and Watson Lab (Michela Mitchell) for supplying direct CMS exports of their echinoderm holdings.
+We thank the Australian Museum (Claire Rowe), Queensland Museum Tropics (Stefano Borghi) and James Cook University (Michela Mitchell) for supplying direct CMS exports of their echinoderm holdings.
