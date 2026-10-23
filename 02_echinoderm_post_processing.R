@@ -1711,10 +1711,10 @@ cat("Records with depth:", sum(echino_wide$has_depth), "\n\n")
 #   the original Deep Slope bin held only 17 records, too few to support
 #   any statistical statement about that zone alone.
 #
-#     Continental Shelf: 0 - 200 m
-#     Upper Slope: 200 - 1000 m
-#     Lower Slope: 1000 - 4000 m
-#     Abyssal: > 4000 m
+#     Continental Shelf: 0 to ≤200m
+#     Upper Slope: >200 to ≤1,000m
+#     Lower Slope: >1,000 to ≤4,000m
+#     Abyssal: >4,000m
 # -----------------------------------------------------------------------------
 
 cat("── Adopting ecologically-grounded depth zones ──\n\n")
@@ -2131,6 +2131,7 @@ cat("── Section 6: Name normalisation + WoRMS resolution ──\n\n")
 #   - ANWC "Mammals"-coded records (38): confirmed genuine ANWC mammal
 #     voucher specimens via GBIF cross-check, despite carrying populated
 #     Echinodermata taxonomic fields.
+# =============================================================================
 
 cat("── Section 6.0: Non-echinoderm contaminant removal ──\n\n")
 
@@ -2157,7 +2158,6 @@ n_before <- nrow(echino_wide)
 echino_wide <- echino_wide %>% filter(!record_key %in% all_contaminant_keys)
 cat("Records removed:", n_before - nrow(echino_wide), "\n")
 cat("Records remaining:", nrow(echino_wide), "\n\n")
-
 
 # =============================================================================
 # SECTION 6a: NAME NORMALISATION FUNCTION
@@ -2853,7 +2853,6 @@ if (nrow(suspicious_names) > 0) print(suspicious_names, n = 50)
 cat("\nRecords missing taxonomic_resolution_level:",
     sum(is.na(echino_wide$taxonomic_resolution_level)), "\n")
 
-
 # =============================================================================
 # SECTION 6h: FULL WoRMS VALIDATION OF EVERY accepted_name
 # =============================================================================
@@ -3118,6 +3117,7 @@ echino_wide <- echino_wide %>%
 
 cat("Records flagged is_extinct_genus = TRUE:", sum(echino_wide$is_extinct_genus), "\n")
 
+# =============================================================================
 # Hemiaster's aphiaID is hardcoded here (123423, https://www.marinespecies.org/
 # aphia.php?p=taxdetails&id=123423) rather than left to the aphiaID-based or
 # name-based lookups in Section 6k. Extinct/fossil-adjacent genera like this
@@ -3129,6 +3129,8 @@ cat("Records flagged is_extinct_genus = TRUE:", sum(echino_wide$is_extinct_genus
 # that field feeds both the WoRMS name lookup and the eventual Darwin Core
 # scientificName, and a "†" would break both; is_extinct_genus (above) is
 # the structured place this information belongs.
+# =============================================================================
+
 echino_wide <- echino_wide %>%
   mutate(aphiaID = if_else(is_extinct_genus, "123423", as.character(aphiaID)))
 
@@ -3190,7 +3192,7 @@ echino_wide <- echino_wide %>%
       TRUE ~ taxonomic_resolution_level
     )
   )
-
+# =============================================================================
 # Higher ranks: where accepted_name_final is a known class/order/family/etc.
 # name, the single-word rule above assigns "Genus" which is wrong. Use
 # worms_rank_master to correct these where available - this REPLACES an
@@ -3208,6 +3210,8 @@ echino_wide <- echino_wide %>%
 # echinoderm records to one of this pipeline's 8 target buckets, based on
 # where that rank actually sits in the taxonomic hierarchy - not a hand
 # picked shortlist that has to be extended every time a new rank shows up.
+# =============================================================================
+
 worms_rank_to_bucket <- c(
   # Phylum and above
   "Kingdom" = "Phylum", "Subkingdom" = "Phylum", "Infrakingdom" = "Phylum",
@@ -3231,10 +3235,13 @@ worms_rank_to_bucket <- c(
   "Variety" = "Subspecies", "Forma" = "Subspecies"
 )
 
+# =============================================================================
 # Diagnostic: flag any worms_rank_master value NOT covered by the mapping
 # above, so a future WoRMS rank this pipeline hasn't seen before surfaces
 # immediately as a visible warning instead of silently falling through to
 # the word-count guess the way Subterclass/Infraorder did here.
+# =============================================================================
+
 unmapped_ranks <- echino_wide %>%
   filter(!is.na(worms_rank_master), !worms_rank_master %in% names(worms_rank_to_bucket)) %>%
   count(worms_rank_master, sort = TRUE)
@@ -3447,6 +3454,7 @@ echino_wide <- echino_wide %>%
   ) %>%
   left_join(taxon_class_lookup, by = c(".lookup_key" = "taxon")) %>%
   mutate(
+    # =============================================================================
     # Was: taxonomic_resolution_level == "Class" - correct while that bucket
     # only ever meant the exact rank "Class", but now that worms_rank_master
     # collapses Subclass/Superclass/Infraclass/Subterclass/Cohort into the
@@ -3458,6 +3466,8 @@ echino_wide <- echino_wide %>%
     # echino_class in the first place, rather than relying on Section 6k's
     # cross-check to catch it after the fact (which it did, correctly, but
     # labelled it as a source field error - it wasn't one, this was).
+    # =============================================================================
+
     inferred_class = if_else(
       !is.na(worms_rank_master) & worms_rank_master == "Class",
       accepted_name_final,
@@ -3544,7 +3554,7 @@ echino_wide <- echino_wide %>%
 
 aphia_ids <- echino_wide$aphiaID %>% na.omit() %>% unique() %>% sort()
 cat("Distinct aphiaIDs to resolve:", length(aphia_ids), "\n")
-
+# =============================================================================
 # wm_record_() (the batched/vectorized endpoint) was confirmed on a real
 # run to return a row per AphiaID but with every classification field NA -
 # WoRMS' batch endpoint doesn't return full record detail the way the
@@ -3554,6 +3564,8 @@ cat("Distinct aphiaIDs to resolve:", length(aphia_ids), "\n")
 # kingdom/phylum/class/order/family/genus. A short pause between calls
 # avoids hammering the API; progress is printed every 100 so a run that's
 # taking a while is visibly still working rather than looking hung.
+# =============================================================================
+
 query_worms_classification <- function(ids) {
   if (length(ids) == 0) return(tibble())
   n <- length(ids)
@@ -3582,12 +3594,15 @@ worms_classification <- query_worms_classification(aphia_ids) %>%
 cat("Classification records returned:", nrow(worms_classification), "of",
     length(aphia_ids), "requested\n")
 
+# =============================================================================
 # The join below matched 0 rows on a real run despite 1031/1031 classification
 # records coming back correctly - the cause was a silent type mismatch between
 # echino_wide$aphiaID (double) and the AphiaID column WoRMS returns (worrms
 # does not guarantee this comes back as double). Forcing both sides to the
 # same integer type before joining, rather than trusting dplyr's implicit
 # coercion, so this can't silently produce an all-NA result again.
+# =============================================================================
+
 cat("aphiaID type - echino_wide:", class(echino_wide$aphiaID),
     "| worms_classification:", class(worms_classification$aphiaID), "\n")
 
@@ -3596,12 +3611,15 @@ echino_wide <- echino_wide %>%
 worms_classification <- worms_classification %>%
   mutate(aphiaID = as.integer(aphiaID))
 
+# =============================================================================
 # If Section 6k has already been run once in this R session (e.g. while
 # debugging), echino_wide will already carry best_family/best_order/worms_*
 # columns from that earlier attempt. Re-joining without dropping them first
 # produces two columns with the same name, and rename() below fails with
 # "Names must be unique." Dropping any pre-existing copies here makes this
 # section safe to re-run any number of times in the same session.
+# =============================================================================
+
 echino_wide <- echino_wide %>%
   select(-any_of(c("best_family", "best_order", "worms_kingdom", "worms_phylum",
                    "worms_class", "worms_genus")))
@@ -3779,6 +3797,7 @@ if (nrow(class_mismatch) > 0) {
   cat("Mismatches written to echino_class_worms_mismatch.csv for review.\n")
 }
 
+# =============================================================================
 # Manual review of a prior batch of these mismatches (24 records, all
 # ALA_echinodermata, record_key prefix NMR-SS...) confirmed accepted_name_final
 # and worms_class agree with each other and are correct; echino_class was the
@@ -3786,6 +3805,8 @@ if (nrow(class_mismatch) > 0) {
 # raw class__ALA_echinodermata field for that whole record batch. Treating
 # the two independently-agreeing, name-derived values as authoritative over
 # the source's raw (evidently, at least sometimes, corrupted) class field.
+# =============================================================================
+
 if (nrow(class_mismatch) > 0) {
   echino_wide <- echino_wide %>%
     mutate(
@@ -3805,6 +3826,7 @@ if (nrow(class_mismatch) > 0) {
       "echino_class_worms_mismatch.csv for the record_keys and original values).\n")
 }
 
+# =============================================================================
 # Hemiaster (AphiaID 123423) still comes back with no family/order - or
 # kingdom/phylum/class - from either lookup above: a fossil-adjacent genus,
 # incomplete in WoRMS' classification tree for this specific AphiaID even
@@ -3816,6 +3838,8 @@ if (nrow(class_mismatch) > 0) {
 # Spatangoida, Family Hemiasteridae) and hardcoded here for this one record
 # (is_extinct_genus, n=1) rather than left NA, since the correct values are
 # now directly verified against the source rather than inferred.
+# =============================================================================
+
 echino_wide <- echino_wide %>%
   mutate(
     worms_kingdom = if_else(is_extinct_genus, "Animalia", worms_kingdom),
@@ -4070,6 +4094,8 @@ echino_wide %>% count(is_extinct_genus) %>% print()
 # records. Using is_straddler here would incorrectly keep 31 genuinely
 # ambiguous records in a single zone while dropping 28 wide-but-unambiguous
 # ones. See `column_documentation.csv` for both definitions.
+# =============================================================================
+
 
 echino_wide <- echino_wide %>%
   mutate(crosses_zone_boundary = str_starts(coalesce(depth_zone, ""), "Spans"))
