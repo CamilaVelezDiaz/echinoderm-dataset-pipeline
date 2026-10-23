@@ -41,8 +41,8 @@ The direct CMS exports supplied by QMT (2) and AM (1) were used with written per
 1. **Clone the repository**
 
     ```bash
-    git clone https://github.com/CamilaVelezDiaz/echinoderm-thesis-pipeline
-    cd echinoderm-thesis-pipeline
+    git clone https://github.com/CamilaVelezDiaz/echinoderm-dataset-pipeline
+    cd echinoderm-dataset-pipeline
     ```
 
 2. **Download the source datasets** into a `data-raw/` folder (see Table 1 of the *Biodiversity Data Journal* descriptor for URLs and dates).
@@ -81,13 +81,13 @@ Running this pipeline under any other locale (e.g. `English_US.utf8`) will produ
 
 If you use this code, please cite:
 
-    Velez Diaz, M.C., Birtles, A. & Watson, S.-A. (2026). echinoderm-thesis-pipeline: R workflow for the integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea (v1.0.0). Zenodo. https://doi.org/<<< Zenodo code DOI >>>
+    Velez Diaz, M.C., Birtles, A. & Watson, S.-A. (2026). echinoderm-dataset-pipeline: R workflow for the integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea (v1.0.0). Zenodo. https://doi.org/<<< Zenodo code DOI >>>
 
 Companion resources:
 
     Dataset (Darwin Core Archive): https://doi.org/<<< Zenodo dataset DOI >>>
-    Dataset (OBIS/GBIF): https://doi.org/<<< OBIS-issued DOI >>>
-    iodiversity Data Journal Data Descriptor: https://doi.org/<<< iodiversity Data Journal DOI >>>
+    Dataset (Metadata - GBIF): https://doi.org/<<< GBIF-issued DOI >>>
+    Biodiversity Data Journal Data Descriptor: https://doi.org/<<< Biodiversity Data Journal DOI >>>
 
 ## Licence
 
