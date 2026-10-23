@@ -4262,7 +4262,7 @@ cat("  column_documentation.csv                     - key column reference\n")
 #
 # PLACEHOLDERS TO FILL IN BEFORE PUBLICATION (search for "<<< FILL IN >>>"):
 #   * ORCID iDs for Alastair Birtles and Sue-Ann Watson
-#   * Scientific Data DOI (in `references`, EML citation, and abstract)
+#   * BDJ DOI (in `references`, EML citation, and abstract)
 #   * Dataset DOI          (in `datasetID`, EML citation)
 #   * IPT / repository download URL (in EML <distribution>)
 #   * GRSciColl institution/collection UUIDs (institutionID, collectionID)
@@ -4378,8 +4378,8 @@ occ <- tibble(
   language            = "eng",
   license             = coalesce(echino_wide$license_resolved, ""),
   rightsHolder        = "James Cook University",
-  # <<< FILL IN: Scientific Data DOI once assigned >>>
-  references          = "https://doi.org/[Scientific-Data-DOI]", # populated after Scientific Data DOI is minted
+  # <<< FILL IN: BDJ DOI once assigned >>>
+  references          = "https://doi.org/[BDJ-DOI]", # populated after BDJ DOI is minted
   # <<< FILL IN: Dataset DOI once minted (Zenodo, OBIS, or ALA) >>>
   datasetID           = "https://doi.org/[Dataset-DOI]", # populated after Zenodo/OBIS DOI is minted
   datasetName         = "Integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea",
@@ -4762,7 +4762,7 @@ eml_xml <- c(
   paste0('    <pubDate>', format(Sys.Date(), "%Y-%m-%d"), '</pubDate>'),
   '    <language>eng</language>',
   '    <abstract>',
-  '      <para>An integrated occurrence dataset of echinoderms (Phylum Echinodermata) for northeast Australia and the adjacent Coral Sea, spanning shelf, slope and abyssal habitats between 10 degrees S to 29 degrees S and 142 degrees E to 154 degrees E. The dataset consolidates 43,470 curated occurrence records assembled from 13 source datasets covering national and international biodiversity aggregators, a national research infrastructure, and direct Collection Management System exports from the Queensland Museum Tropics and the Australian Museum. Records were integrated through a reproducible R workflow that harmonises Darwin Core fields, deduplicates records across sources, and resolves conflicts in coordinates, collection year, basis of record, depth and taxonomic name against the World Register of Marine Species (WoRMS). Per-record data-quality flags (coordinate quality, depth quality, taxonomic resolution) are provided as MeasurementOrFact rows and in dynamicProperties. Full methods are described in the accompanying Data paper.</para>',
+  '      <para>An integrated occurrence dataset of echinoderms (Phylum Echinodermata) for northeast Australia and the adjacent Coral Sea, spanning shelf, slope and abyssal habitats between 9 degrees S to 30 degrees S and 136 degrees E to 167 degrees E. The dataset consolidates 43,470 curated occurrence records assembled from 13 source datasets covering national and international biodiversity aggregators, a national research infrastructure, and direct Collection Management System exports from the Queensland Museum Tropics and the Australian Museum. Records were integrated through a reproducible R workflow that harmonises Darwin Core fields, deduplicates records across sources, and resolves conflicts in coordinates, collection year, basis of record, depth and taxonomic name against the World Register of Marine Species (WoRMS). Per-record data-quality flags (coordinate quality, depth quality, taxonomic resolution) are provided as MeasurementOrFact rows and in dynamicProperties. Full methods are described in the accompanying Data paper.</para>',
   '    </abstract>',
   '    <keywordSet>',
   '      <keyword>Occurrence</keyword>',
@@ -4782,7 +4782,7 @@ eml_xml <- c(
   '      <keyword>deep sea</keyword>',
   '    </keywordSet>',
   '    <intellectualRights>',
-  '    <para>The original compilation, curation, quality-control information, consensus fields, derived variables, and associated documentation produced by the authors are released under a Creative Commons Attribution 4.0 International licence (CC BY 4.0). Third-party source records and associated content retain their original licences and rights conditions, as specified by the respective data providers and, where applicable, in the licence and provenance information retained per-record in this dataset (see the "license" field of occurrence.txt). Original Collection Management System exports supplied by the Australian Museum and Queensland Museum Tropics were used with written permission and remain subject to the holding institutions\' access conditions; derived occurrence records from these sources are included in the deposited dataset with the depositors\' permission.</para>',
+  '    <para>The original compilation, curation, quality-control information, consensus fields, derived variables, and associated documentation produced by the authors are released under a Creative Commons Attribution 4.0 International licence (CC BY 4.0). Third-party source records and associated content retain their original licences and rights conditions, as specified by the respective data providers and, where applicable, in the licence and provenance information retained per record in the deposited dataset. Records for which no source licence could be determined remain unspecified rather than being assumed to be openly licensed. Original Collection Management System exports supplied by the Australian Museum and Queensland Museum Tropics were used with written permission and remain subject to the holding institutions\' access conditions; derived occurrence records from these sources are included in the deposited dataset with the institutions\' permission.</para>',
   '    </intellectualRights>',
   '    <distribution scope="document">',
   '      <online>',
@@ -4876,17 +4876,3 @@ cat("  ", file.path(dwc_dir, "measurementorfact.txt"), "\n")
 cat("  ", file.path(dwc_dir, "meta.xml"), "\n")
 cat("  ", file.path(dwc_dir, "eml.xml"), "\n")
 cat("  ", zip_target, "\n\n")
-
-cat("Next steps before public deposit:\n")
-cat("  1. Fill in the five placeholders marked '<<< FILL IN >>>' in this script:\n")
-cat("       - Scientific Data DOI (references)\n")
-cat("       - Dataset DOI (datasetID, EML citation)\n")
-cat("       - IPT / Zenodo download URL (EML <distribution>)\n")
-cat("       - Alastair Birtles / Sue-Ann Watson ORCID iDs (EML <associatedParty>)\n")
-cat("       - Grant / funding information (EML <project>)\n")
-cat("  2. Validate the archive at https://tools.gbif.org/dwca-validator/\n")
-cat("  3. Deposit on Zenodo for an immediate citable DOI.\n")
-cat("  4. Submit through the OBIS Australia IPT (or ALA IPT);\n")
-cat("     federation to GBIF is automatic once accepted.\n")
-
-writeLines(capture.output(sessionInfo()), "sessionInfo_02.txt")
