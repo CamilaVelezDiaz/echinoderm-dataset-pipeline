@@ -10,9 +10,10 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 |------|---------|
 | `01_echinoderm_dataset_integration.R` | Loads 13 source datasets, filters to Echinodermata within the study bounding box, deduplicates records across sources, and writes long-format (Layer A) and wide-format (Layer B) tables. |
 | `02_echinoderm_post_processing.R` | Resolves cross-source conflicts in coordinates, collection year, basis of record, depth, and taxonomic name (against WoRMS); assigns depth zones; generates the final `echino_wide.csv` and Darwin Core Archive. |
-| `LICENSE` | MIT license for the code. |
+| `LICENSE.md` | MIT license for the code. |
 | `CITATION.cff` | Machine-readable citation. |
-| `sessionInfo.txt` | R version and package versions used to produce v1.0.0. |
+| `sessionInfo_01.txt` | R version and package versions used to produce 01_echinoderm_datset_integration.R v1.0.0. |
+| `sessionInfo_02.txt` | R version and package versions used to produce 02_echinoderm_post_processing.R v1.0.0. |
 | `.zenodo.json` | Zenodo deposit metadata. |
 
 ## Requirements
