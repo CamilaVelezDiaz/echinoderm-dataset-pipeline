@@ -29,9 +29,9 @@ The pipeline expects 13 raw source files that must be downloaded separately. The
     Atlas of Living Australia (ALA) — 3 downloads
     Global Biodiversity Information Facility (GBIF) — 2 downloads
     CSIRO National Collections and Marine Infrastructure (CSIRO NCMI) — 2 downloads
-    Ocean Biodiversity Information System (OBIS)
-    Online Zoological Collections of Australian Museums (OZCAM)
-    Integrated Digitized Biocollections (iDigBio)
+    Ocean Biodiversity Information System (OBIS) - 1 download
+    Online Zoological Collections of Australian Museums (OZCAM) - 1 download
+    Integrated Digitized Biocollections (iDigBio) - 1 download
     Queensland Museum Tropics (QMT) — 2 direct CMS exports
     Australian Museum (AM) — 1 direct CMS export
 
