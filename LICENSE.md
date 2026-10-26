@@ -1,6 +1,6 @@
-MIT License
+CC BY 4.0 License
 
-Copyright (c) 2026 Maria Camila Velez Diaz
+Copyright (c) 2026 James Cook University
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
