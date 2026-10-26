@@ -17,6 +17,7 @@ authors:
     affiliation: James Cook University
   - family-names: Watson
     given-names: Sue-Ann
+    orcid: https://orcid.org/0000-0002-9818-7429
     affiliation: James Cook University
 license: MIT
 repository-code: https://github.com/CamilaVelezDiaz/echinoderm-dataset-pipeline
