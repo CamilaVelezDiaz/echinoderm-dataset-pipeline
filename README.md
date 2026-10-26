@@ -1,6 +1,6 @@
 # Echinoderm-dataset-pipeline
 
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23639651)](https://doi.org/10.5281/zenodo.23639651) -->
 
 R workflow for the integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea. Produces a curated, quality-controlled, Darwin Core Archive of 43,470 echinoderm occurrence records from 13 source datasets, deposited on Zenodo and described in a data paper in Biodiversity Data Journal.
 
@@ -81,11 +81,11 @@ Running this pipeline under any other locale (e.g. `English_US.utf8`) will produ
 
 If you use this code, please cite:
 
-    Velez Diaz, M.C., Birtles, A. & Watson, S.-A. (2026). echinoderm-dataset-pipeline: R workflow for the integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea (v1.0.0). Zenodo. https://doi.org/<<< Zenodo code DOI >>>
+    Velez Diaz, M.C., Birtles, A. & Watson, S.-A. (2026). echinoderm-dataset-pipeline: R workflow for the integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23639651
 
 Companion resources:
 
-    Dataset (Darwin Core Archive): https://doi.org/<<< Zenodo dataset DOI >>>
+    Dataset (Darwin Core Archive): https://doi.org/10.5281/zenodo.23639651
     Dataset (Metadata - GBIF): https://doi.org/<<< GBIF-issued DOI >>>
     Biodiversity Data Journal Data Descriptor: https://doi.org/<<< Biodiversity Data Journal DOI >>>
 
