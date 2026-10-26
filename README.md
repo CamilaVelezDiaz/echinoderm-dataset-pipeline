@@ -99,7 +99,7 @@ The published integrated dataset is released under a Creative Commons Attributio
 
     Maria Camila Velez Diaz (ORCID: 0000-0003-4180-1077) — College of Science and Engineering, James Cook University
     Alastair Birtles — College of Science and Engineering, James Cook University
-    Sue-Ann Watson — College of Science and Engineering, James Cook University
+    Sue-Ann Watson (ORCID: 0000-0002-9818-7429) — College of Science and Engineering, James Cook University
 
 ## Contact 
     Maria Camila Velez Diaz - mariacamila.velezdiaz@my.jcu.edu.au
