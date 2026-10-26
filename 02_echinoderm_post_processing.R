@@ -4401,7 +4401,7 @@ occ <- tibble(
   # <<< FILL IN: BDJ DOI once assigned >>>
   references          = "https://doi.org/[BDJ-DOI]", # populated after BDJ DOI is minted
   # <<< FILL IN: Dataset DOI once minted (Zenodo, OBIS, or ALA) >>>
-  datasetID           = "https://doi.org/[Dataset-DOI]", # populated after Zenodo/OBIS DOI is minted
+  datasetID           = "https://doi.org/10.5281/zenodo.23639651", # populated after Zenodo/OBIS DOI is minted
   datasetName         = "Integrated echinoderm occurrence dataset for northeast Australia and the adjacent Coral Sea",
   
   # ---- institution / collection ----
@@ -4807,7 +4807,7 @@ eml_xml <- c(
   '    <distribution scope="document">',
   '      <online>',
   # <<< FILL IN: IPT / Zenodo DwC-A URL once published >>>
-  '        <url function="download">[Insert IPT or Zenodo DwC-A URL after publication]</url>',
+  '        <url function="download">[10.5281/zenodo.23639651]</url>',
   '      </online>',
   '    </distribution>',
   '    <coverage>',
