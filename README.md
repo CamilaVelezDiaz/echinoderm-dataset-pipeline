@@ -48,13 +48,7 @@ The direct CMS exports supplied by QMT (2) and AM (1) were used with written per
 
 2. **Download the source datasets** into a `data-raw/` folder (see Table 3 of the *Biodiversity Data Journal* descriptor for URLs and dates).
 
-3. **Restore the package environment** (optional but recommended)
-
-    ```bash
-    Rscript -e 'renv::restore()'
-    ```
-
-4. **Run the pipeline**
+3. **Run the pipeline**
 
     ```bash
     Rscript "01_echinoderm_dataset_integration.R"
@@ -86,8 +80,6 @@ If you use this code, please cite:
 Companion resources:
 
     Dataset (Darwin Core Archive): https://doi.org/10.5281/zenodo.23639651
-    Dataset (Metadata - GBIF): https://doi.org/<<< GBIF-issued DOI >>>
-    Biodiversity Data Journal Data Descriptor: https://doi.org/<<< Biodiversity Data Journal DOI >>>
 
 ## Licence
 
