@@ -20,7 +20,7 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 
 - **R version**: 4.5.1 or higher.
 - **Key packages to run 01/02**: `dplyr`, `tibble`, `stringr`, `readr`, `purrr`, `tidyr`, `worrms` (WoRMS API), `sf` and `rnaturalearth` (coordinate/land QC flagging in Section 1d of 02_echinoderm_post_processing.R - required to reproduce coord_land_qc_flag). The OBIS source is a static snapshot, generated once via `robis::occurrence()` prior to this pipeline, not regenerated at runtime, since OBIS is a continuously-updated live database and a fixed snapshot is needed for a reproducible result. robis is therefore not required to run 01_echinoderm_dataset_integration.R or 02_echinoderm_post_processing.R directly.
-- Full package versions are recorded in `sessionInfo.txt`.
+- Full package versions are recorded in `sessionInfo01/02.txt`.
 
 ## Data sources 
 
@@ -70,7 +70,7 @@ The direct CMS exports supplied by QMT (2) and AM (1) were used with written per
 
 ## Reproducibility notes
 
-This pipeline was run under `LC_COLLATE=Spanish_Mexico.utf8` (see `sessionInfo.txt` for the full session record). This does not affect reproducibility: the only step in the pipeline where locale-dependent text sorting could influence the final result (the record_key tie-break in Section 0 of 02_echinoderm_post_processing.R`) uses locale-independent, byte-order comparison (`.locale = "C"`) rather than the session's own locale. This was verified empirically before applying the fix - zero groups in the current dataset have a genuine tie requiring this tie-break to activate - so the fix is a safeguard for future reruns with additional or updated source data, not a correction to an active problem.
+This pipeline was run under `LC_COLLATE=Spanish_Mexico.utf8` (see `sessionInfo01/02.txt` for the full session record). This does not affect reproducibility: the only step in the pipeline where locale-dependent text sorting could influence the final result (the record_key tie-break in Section 0 of 02_echinoderm_post_processing.R`) uses locale-independent, byte-order comparison (`.locale = "C"`) rather than the session's own locale. This was verified empirically before applying the fix - zero groups in the current dataset have a genuine tie requiring this tie-break to activate - so the fix is a safeguard for future reruns with additional or updated source data, not a correction to an active problem.
 
 Every other locale-sensitive operation in the pipeline (numeric sorting for depth/coordinate resolution, print-only diagnostic tables) either doesn't depend on text comparison at all, or is used purely for on-screen diagnostics rather than to determine which value is written to the final dataset.
 
