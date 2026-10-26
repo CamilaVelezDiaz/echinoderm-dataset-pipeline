@@ -1,4 +1,4 @@
-CC BY 4.0 License
+MIT License
 
 Copyright (c) 2026 James Cook University
 
