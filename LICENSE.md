@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Velez Diaz, Birtles and Watson (compilation and derived data). Third-party source records remain subject to their providers' rights.
+Copyright (c) 2026 Maria Camila Velez Diaz, Alastair Birtles and Sue-Ann Watson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
