@@ -17,7 +17,7 @@
 # SETUP
 # =============================================================================
 
-setwd("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1")
+setwd("C:data-raw/")
 
 # =============================================================================
 # Library
@@ -41,11 +41,11 @@ library(worrms)
 
 # --- GBIF ---
 gbif_other <- read_delim(
-  "C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\GBIF Queensland Museum\\occurrence.txt",
+  "data-raw/GBIF Queensland Museum/occurrence.txt",
   delim = "\t", show_col_types = FALSE
 )
 gbif_echi <- read_delim(
-  "C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\GIBF - Echinodermata data_Au\\occurrence.txt",
+  "data-raw/GIBF - Echinodermata data_Au/occurrence.txt",
   delim = "\t", show_col_types = FALSE
 ) %>%
   mutate(
@@ -54,21 +54,21 @@ gbif_echi <- read_delim(
   )
 
 # --- ALA ---
-ala_echi   <- read_csv("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\ALA - Echinodermata dat\\records-2026-04-10.csv",
+ala_echi   <- read_csv("data-raw/ALA - Echinodermata dat/records-2026-04-10.csv",
                        show_col_types = FALSE)
-ala_other  <- read_tsv("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\records Atlas - Other invertebrates collection\\records-2026-03-13.tsv",
+ala_other  <- read_tsv("data-raw/records Atlas - Other invertebrates collection/records-2026-03-13.tsv",
                        show_col_types = FALSE)
-ala_GBRSBD <- read_tsv("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\Record Atlas GBRBD\\records-2026-03-13.tsv",
+ala_GBRSBD <- read_tsv("data-raw/Record Atlas GBRBD/records-2026-03-13.tsv",
                        show_col_types = FALSE)
 
 # --- CSIRO ---
-csiro_gbrsbd <- read_delim("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\Csiro- GBRSBD\\occurrence.txt",
+csiro_gbrsbd <- read_delim("data-raw/Csiro- GBRSBD/occurrence.txt",
                            delim = "\t", show_col_types = FALSE)
-csiro_other  <- read_delim("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\Csiro-QLDM other invertebrates - marine records\\occurrence.txt",
+csiro_other  <- read_delim("data-raw/Csiro-QLDM other invertebrates - marine records/occurrence.txt",
                            delim = "\t", show_col_types = FALSE)
 
 # --- IDigBio ---
-idigbio_raw <- read_csv("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\iDigBio data\\occurrence.csv",
+idigbio_raw <- read_csv("data-raw/iDigBio data/occurrence.csv",
                         show_col_types = FALSE)
 idigbio <- idigbio_raw %>%
   rename_with(~ str_remove(.x, "^dwc:"), starts_with("dwc:")) %>%
@@ -81,11 +81,11 @@ idigbio <- idigbio_raw %>%
   )
 
 # --- OZCAM ---
-ozcam <- read_csv("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\OZCAM ALA data\\records-2026-04-03.csv",
+ozcam <- read_csv("data-raw/OZCAM ALA data/records-2026-04-03.csv",
                   show_col_types = FALSE)
 
 # --- OBIS snapshot — downloaded 2026-05-25 ---
-obis_echi <- read_csv("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\OBIS\\obis_echi_snapshot_2026-05-25.csv",
+obis_echi <- read_csv("data-raw/OBIS/obis_echi_snapshot_2026-05-25.csv",
                       show_col_types = FALSE) %>%
   mutate(
     minimumDepthInMeters = if_else(
@@ -100,7 +100,7 @@ obis_echi <- read_csv("C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\OBIS\
 
 # --- CIDARIS Echinodermata dataset ---
 michela_raw <- read_excel(
-  "C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\Cidaris - Michela\\MTQ echinoderms - registered - June 2021 final.xlsx",
+  "data-raw/Cidaris - Michela/MTQ echinoderms - registered - June 2021 final.xlsx",
   sheet = "Raw data from Vernon"
 )
 
@@ -159,7 +159,7 @@ michela <- michela_raw %>%
 
 # --- QMT - CIDARIS Echinodermata CMS export --- 
 stefano_raw <- read_excel(
-  "C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\MQT - Stefano\\CIDARIS_Echinoderms.xlsx"
+  "data-raw/MQT - Stefano/CIDARIS_Echinoderms.xlsx"
 )
 
 stefano_dates <- dmy(stefano_raw$eventDate, locale = 'English')
@@ -198,7 +198,7 @@ stefano <- stefano_raw %>%
 # Queensland waters, all PreservedSpecimen, with depth coverage for
 # 5,654/5,656 records (0-2,523m).
 am_raw <- read_csv(
-  "C:\\Users\\Camilita\\Desktop\\JCU\\Thesis\\Phase 1\\AM ECHINO DEPTH\\26-015 Velez.csv",
+  "data-raw/AM ECHINO DEPTH/26-015 Velez.csv",
   locale = locale(encoding = "latin1"),
   show_col_types = FALSE
 )
