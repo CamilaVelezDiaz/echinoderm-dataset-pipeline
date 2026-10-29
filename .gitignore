@@ -13,6 +13,8 @@ renv/staging/
 data-raw/
 data/
 *.csv
+!recovered_coordinates.csv
+!coord_manual_review_decisions.csv
 *.txt
 !README.txt
 *.xlsx
