@@ -24,11 +24,8 @@ setwd("C:data-raw/")
 # =============================================================================
 
 library(tidyverse)
-library(vegan)
-library(broom)
 library(dplyr)
 library(tidyr)
-library(ggplot2)
 library(lubridate)
 library(purrr)
 library(stringr)
