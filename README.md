@@ -12,7 +12,7 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 | `02_echinoderm_post_processing.R` | Resolves cross-source conflicts in coordinates, collection year, basis of record, depth, and taxonomic name (against WoRMS); assigns depth zones; generates the final `echino_wide.csv` and Darwin Core Archive. |
 | `LICENSE.md` | MIT license for the code. |
 | `CITATION.cff` | Machine-readable citation. |
-| `sessionInfo_01.txt` | R version and package versions used to produce 01_echinoderm_datset_integration.R v1.0.0. |
+| `sessionInfo_01.txt` | R version and package versions used to produce 01_echinoderm_dataset_integration.R v1.0.0. |
 | `sessionInfo_02.txt` | R version and package versions used to produce 02_echinoderm_post_processing.R v1.0.0. |
 | `.zenodo.json` | Zenodo deposit metadata. |
 
@@ -20,7 +20,7 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 
 - **R version**: 4.5.1 or higher.
 - **Key packages to run 01/02**: `dplyr`, `tibble`, `stringr`, `readr`, `purrr`, `tidyr`, `worrms` (WoRMS API), `sf`, `readxl`, `lubridate` and `rnaturalearth` (coordinate/land QC flagging in Section 1d of 02_echinoderm_post_processing.R - required to reproduce coord_land_qc_flag). The OBIS source is a static snapshot, generated once via `robis::occurrence()` prior to this pipeline, not regenerated at runtime, since OBIS is a continuously-updated live database and a fixed snapshot is needed for a reproducible result. robis is therefore not required to run 01_echinoderm_dataset_integration.R or 02_echinoderm_post_processing.R directly.
-- Full package versions are recorded in `sessionInfo01/02.txt`.
+- Full package versions are recorded in `sessionInfo_01.txt / sessionInfo_02.txt`.
 
 ## Data sources 
 
@@ -59,12 +59,12 @@ The direct CMS exports supplied by QMT (2) and AM (1) were used with written per
 ## Main Outputs
 
     echino_wide.csv — the primary wide-format table (43,470 records)
-    echino_wide_depth.csv — depth-bearing subset (24,669 records)
+    echino_wide_depth.csv — depth-bearing subset (24,684 records)
     dwca_public_release/ — Darwin Core Archive (occurrence.txt, meta.xml, eml.xml, measurementorfact.txt)
 
 ## Reproducibility notes
 
-This pipeline was run under `LC_COLLATE=Spanish_Mexico.utf8` (see `sessionInfo01/02.txt` for the full session record). This does not affect reproducibility: the only step in the pipeline where locale-dependent text sorting could influence the final result (the record_key tie-break in Section 0 of 02_echinoderm_post_processing.R`) uses locale-independent, byte-order comparison (`.locale = "C"`) rather than the session's own locale. This was verified empirically before applying the fix - zero groups in the current dataset have a genuine tie requiring this tie-break to activate - so the fix is a safeguard for future reruns with additional or updated source data, not a correction to an active problem.
+This pipeline was run under `LC_COLLATE=Spanish_Mexico.utf8` (see `sessionInfo_01.txt / sessionInfo_02.txt` for the full session record). This does not affect reproducibility: the only step in the pipeline where locale-dependent text sorting could influence the final result (the record_key tie-break in Section 0 of 02_echinoderm_post_processing.R`) uses locale-independent, byte-order comparison (`.locale = "C"`) rather than the session's own locale. This was verified empirically before applying the fix - zero groups in the current dataset have a genuine tie requiring this tie-break to activate - so the fix is a safeguard for future reruns with additional or updated source data, not a correction to an active problem.
 
 Every other locale-sensitive operation in the pipeline (numeric sorting for depth/coordinate resolution, print-only diagnostic tables) either doesn't depend on text comparison at all, or is used purely for on-screen diagnostics rather than to determine which value is written to the final dataset.
 
@@ -85,7 +85,7 @@ Companion resources:
 
 This code is released under the MIT License (see LICENSE).
 
-The published integrated dataset is released under a Creative Commons Attribution 4.0 International licence (CC BY 4.0). Original CMS export files supplied by the Australian Museum and Queensland Museum Tropics remain subject to the institutions' own access conditions and are not redistributed; the derived occurrence records are included in the deposited dataset with permission of both institutions.
+The published integrated dataset records carry per-record licences (see license field); the authors’ compilation and derived fields are CC BY 4.0. Original CMS export files supplied by the Australian Museum and Queensland Museum Tropics remain subject to the institutions' own access conditions and are not redistributed; the derived occurrence records are included in the deposited dataset with permission of both institutions.
 
 ## Authors
 
