@@ -1,0 +1,651 @@
+record_key,primary_source,locality_used,recovered_latitude,recovered_longitude,recovery_method,coordinateUncertaintyInMeters_assigned
+000B30AD-A037-45CC-96CA-E94C1EFBF217,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+0042B589-9C4B-4F3F-967F-FF16182684A9,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+008A53A6-3D2A-4416-8E03-13E58FF88996,iDigBio,,-27.415205086826834,153.3341199982012,idigbio_geopoint_recovery,
+00DAACCE-171E-43B3-800E-7A6E9D7A661F,ALA_echinodermata,Waining Reef,-19.0,147.35,locality_gazetteer_geocoding,8000.0
+018E5D86-381F-40A6-9677-CEEC68E4F9C3,iDigBio,south east corner of gulf of carpentaria,-16.56999,140.97666,idigbio_geopoint_recovery,
+01E154AC-2937-42C2-B8FC-67E9D81331D3,iDigBio,south east corner gulf of carpentaria,-17.00166,140.866,idigbio_geopoint_recovery,
+020E67D0-EA3A-4133-A25E-DD71A3943B9F,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+024A93F3-5096-4E14-9470-EBED2CB1D9BC,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+02C5E687-84E1-4795-A520-96F94C1527A6,iDigBio,"torres strait, murray island",-9.933,144.066,idigbio_geopoint_recovery,
+045CC8F3-4CC5-48C0-8A4B-61BAF8A5854F,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+050081D3-167F-4CE6-B8E5-57D1C314D0EE,ALA_echinodermata,"Coolum Beach, between Second Bay and First Bay",-26.53,153.1,locality_gazetteer_geocoding,3000.0
+05945AE7-914B-455E-B027-7E2DCE924BB0,iDigBio,"wreck reef, coral sea",-22.2,155.166,idigbio_geopoint_recovery,
+05D664A1-E0A5-4CF6-A4BD-E3471AE65EC7,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+06329393-CC21-4F6F-9EDD-26350A81D579,iDigBio,south east corner of gulf of carpentaria,-16.65166,140.72332,idigbio_geopoint_recovery,
+06690E9D-2E64-439F-9B0B-D2D8647F6A8E,ALA_echinodermata,"Lizard Island, off Lizard Island Research Station",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+06BEBF72-659C-4A20-B9A4-663D8580E727,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+0966A3C5-DE28-4C34-B75F-6AB91C5691FC,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+0984CCA7-D6D1-4C74-AE10-5FF3EDB875F0,ALA_echinodermata,"Lodestone Reef, Townsville, 35 miles NNE of Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+0AC7D54D-9BBF-4BAD-BFCB-F0BCA62CF1B9,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+0E43E1A1-2D57-4422-BA05-FD0B2630855E,iDigBio,south east corner of gulf of carpentaria,-17.416,140.783,idigbio_geopoint_recovery,
+0E4A1461-AD78-433F-9CDD-7DD4450908AA,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+0E8AFC33-51BF-404D-884C-958052E7125A,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+0ED9E751-C405-4BD5-BB79-8B45687118F5,iDigBio,off fraser island,-25.3383,154.07221,idigbio_geopoint_recovery,
+0F16A067-F722-43C3-A034-A72A1683DB99,iDigBio,"wreck reef, eastern reef west island, coral sea",-22.2,155.166,idigbio_geopoint_recovery,
+108F04E7-F22E-445B-ABFF-5D5F2C204729,iDigBio,south east corner of gulf of carpentaria,-16.86166,140.18166,idigbio_geopoint_recovery,
+116D76F9-A45F-4DDE-94B3-317D7E93F0C6,ALA_echinodermata,"Townsville, North Queensland",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+13603DA7-5E73-483D-AE7D-39AD0E378CFA,iDigBio,"west of point burrowes, gulf of carpenteria",-16.97499,140.76333,idigbio_geopoint_recovery,
+13C185B1-A88B-48EB-B71C-1CBC87D508A0,iDigBio,south east corner of the gulf of carpentaria,-16.666,140.47416,idigbio_geopoint_recovery,
+14B0FE95-E589-4355-8046-D8F46F8D549D,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+14DD0684-BD4E-4612-8094-CCE25684A301,ALA_echinodermata,Wistari Reef,-23.47,151.88,locality_gazetteer_geocoding,3000.0
+14FB9688-E351-44DA-ACCD-3FBC2C91B498,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+16B7B0B9-4DFB-47CC-8C42-30A12D525908,iDigBio,"south kestrel island, gulf of carpentaria",-16.0,140.0,idigbio_geopoint_recovery,
+17CEB271-192F-402B-922B-8EAAECC2D93B,iDigBio,south east corner of gulf of carpentaria,-17.366,140.79499,idigbio_geopoint_recovery,
+1832EBF1-1F27-4B16-9A38-95EE5AAB3FC2,iDigBio,south east corner of gulf of carpentaria,-17.03666,140.27499,idigbio_geopoint_recovery,
+1A207917-AE63-475A-8712-C1C5E46DE7C6,iDigBio,south east corner of gulf of carpentaria,-16.716,140.583,idigbio_geopoint_recovery,
+1A4F0189-6F0E-4F80-A6BD-95762B6BC0A3,iDigBio,"south east corner, gulf of carpentaria",-16.5,141.0,idigbio_geopoint_recovery,
+1A5454B4-D57C-4EDC-8FDF-A0029F118F3F,iDigBio,"porpoise cay, wreck reef",-22.216,155.3,idigbio_geopoint_recovery,
+1AA5C816-FC50-4B16-86EE-C29A9325EF88,ALA_echinodermata,Nearest Named Place: Percy Island,-21.65,150.27,locality_gazetteer_geocoding,5000.0
+1AFD869A-CCAC-4D4E-9F7E-E6DEC0499FF5,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+1C053631-6766-4910-933B-7C7E48BB2326,ALA_echinodermata,"Yonge Reef, Great Barrier Reef",-14.58,145.63,locality_gazetteer_geocoding,5000.0
+1C65EB1A-17E2-41A3-91D4-0EDD65F33CA0,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+1C804998-9565-4EEE-BEF7-FCE564266836,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+1DBB86FD-B2BA-48D2-B558-D2A522F84C78,iDigBio,gulf of carpentaria,-13.983,139.0,idigbio_geopoint_recovery,
+1DC07331-FB60-4AD6-8495-FB994E6B2FB7,ALA_echinodermata,"Lizard Island, South Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+201CCA32-B9AC-46C1-B1CF-35F906410088,ALA_echinodermata,Waining Reef,-19.0,147.35,locality_gazetteer_geocoding,8000.0
+203D0469-8A9A-4F7C-B48D-07CB29FA3BC2,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+2045908A-D95E-4141-906B-B033371B3EB2,iDigBio,murray island,-9.933,144.066,idigbio_geopoint_recovery,
+207E922A-941A-4829-9090-DD6FCD6FD321,ALA_echinodermata,Myora,-27.45,153.42,locality_gazetteer_geocoding,3000.0
+208DAB46-F2D9-4B9A-A063-AA02E8372103,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+20BA44DE-F14E-461E-8553-5B6C507874B4,ALA_echinodermata,"Gillett Cay, Swain Reefs",-21.65,152.25,locality_gazetteer_geocoding,20000.0
+20DA47A5-AC10-474B-AD20-FB92C806B53C,GBIF_echinodermata,Port Molle,-20.2667,148.7,locality_gazetteer_geocoding,5000.0
+21FC032D-6AC2-489B-8193-15BC08F2F4EC,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+22E6C418-AAAD-43F4-A00C-D4CDE155034C,iDigBio,south east corner of gulf of carpentaria,-16.69666,140.78166,idigbio_geopoint_recovery,
+22FB7F31-92F0-49F5-A052-2D79D71A0FCD,iDigBio,"fiat feller, or fatmans creek, gulf of carpentaria",-16.0,140.0,idigbio_geopoint_recovery,
+231F97FA-4416-46B0-B072-FCFC10804D80,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+23825CF7-D61C-4239-B073-C05E9CAC61CB,iDigBio,gulf of carpentaria,-16.5,141.0,idigbio_geopoint_recovery,
+2410F61B-B476-4D7C-BE93-E494EB55905E,iDigBio,"west of pt. burrowes, south east gulf of carpentaria",-16.966,140.966,idigbio_geopoint_recovery,
+24BC4C39-B512-4800-AF38-83DD818A0745,ALA_echinodermata,"Wistari Reef, Heron Island",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+256A07F7-DB21-4B25-8DC1-EA3F545886D3,iDigBio,south east corner of gulf of carpentaria,-17.416,140.38499,idigbio_geopoint_recovery,
+269988B7-7BC4-439D-9703-9783334E07E1,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+289BFF4D-8A8A-4670-9600-8EC4093BF8E5,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+29021B3D-D33B-42B7-8AFA-450AE53463EC,GBIF_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+2C20B4A2-BCFC-4A3D-9CDD-DC21BFF233B6,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+2C342B5C-E6BF-403B-AF60-9AD71A9FF9C8,ALA_echinodermata,Wistari Reef near Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+2C4C79B4-15E5-4751-9719-D443EB2086CF,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+2CAC3937-8792-409D-BC18-CCD437B53A3F,iDigBio,off moreton bay,-29.45366,153.65,idigbio_geopoint_recovery,
+2CB7C613-9E18-42D5-A0FF-24A5BF122F4B,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+2D33D415-F320-43E4-BDB9-7C06C3437369,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+2DE6760A-2C8A-4A0A-B2B0-6DF7918AA922,ALA_echinodermata,NE Australia|Nearest Named Place: Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+2E8C9E38-BA0B-4A81-B1B3-911559D34B56,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+2FD18E74-9B41-4998-BB47-961AE16724D0,ALA_echinodermata,"Lizard Island, Casuarina Beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+30523484-37E8-4BD5-A6A8-8DA955BE113D,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+31207B25-8767-4684-9416-1796516AD23F,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+31AF9CE0-A826-4DF3-BBB8-9DECE24C2B34,iDigBio,south east corner of gulf of carpentaria,-16.4,140.855,idigbio_geopoint_recovery,
+31D58AAC-0DCC-4591-A560-CE600999B54D,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+325A3851-7BCE-4E64-A406-CE044591A03E,iDigBio,south east corner of gulf of carpentaria,-17.25666,139.74833,idigbio_geopoint_recovery,
+327B9275-6AB9-4365-AF37-995D2DDAA500,ALA_echinodermata,"Lizard Island, northern lagoon",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+32D22364-C0D4-41A5-BA05-FA2C2D8B1DDE,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+331B5963-7E02-4791-B723-7AF17533F302,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+331F3544-D593-48C4-9E42-86DFB08EFA45,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+336991C2-C895-4E16-A1E7-613CF334C524,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+3403B669-4A34-4DE1-8E05-3C4F5C43BFEE,iDigBio,"west of point burrowes, gulf of carpentaria",-16.966,140.966,idigbio_geopoint_recovery,
+34F0E1EA-D181-4AE4-A7EF-A0170B60DA1E,iDigBio,"wreck reef, north east west island, coral sea",-22.2,155.166,idigbio_geopoint_recovery,
+36ACB110-9C6F-4BB8-A2EF-440E80A27189,ALA_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+3715F60B-C285-43D6-A091-0AB07D7B3363,iDigBio,off fraser island,-25.3383,154.07221,idigbio_geopoint_recovery,
+380D44D7-2A81-4066-97FF-D374B15092A3,ALA_echinodermata,Swain Reefs,-21.65,152.25,locality_gazetteer_geocoding,20000.0
+396DFCD7-A906-4142-A331-4CAE1844925B,ALA_echinodermata,"Lizard Island, 50 m W of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+39E8B1D3-4BC1-4E85-8A65-293A3CD8387B,iDigBio,"pearce island, sir edward pellew group, gulf of carpentaria",-9.5,143.3,idigbio_geopoint_recovery,
+3A644B55-461C-41BC-98C4-9F9272EFD93E,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+3B218AEB-B8E6-400B-9AEC-D2A149C167C3,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+3BEFCFE0-C116-4FEF-B85E-3DF3FCA061D3,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+3C8DBE22-D5CD-48B1-BCF1-5E8EF80CFCF2,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+3CB4A7E3-82E0-4182-AE67-BDB50588D564,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+3CD43011-4BC3-48C4-92A7-DB71477F9D9B,ALA_echinodermata,Port Denison,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+3CE76815-F061-4898-BED4-35F651AD35E3,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+3E2EDDE7-1DC3-4892-BE19-5707B9344016,iDigBio,gulf of carpentaria,-16.483,140.13583,idigbio_geopoint_recovery,
+3E5B196C-7D2D-44D6-B238-022440B786E3,ALA_echinodermata,Port Denison,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+3EB29E71-8BCC-4875-B8D6-4CEF5E941DCC,iDigBio,south east corner of gulf of carpentaria,-16.44499,141.06,idigbio_geopoint_recovery,
+3F88061D-ADA2-4800-B588-46AF1ECB4E15,iDigBio,gulf of carpenteria,-13.983,139.0,idigbio_geopoint_recovery,
+3F9489A1-CE05-4F82-9CD6-3B5ABDA45EA6,ALA_echinodermata,"Waining Reef, 1st snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+3FD6705B-E905-4BBC-B00D-A7A4E68DCA23,ALA_echinodermata,"Lizard Island, Casuarina Beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+400386D3-5E83-4647-9354-A904A80D14E8,iDigBio,gulf of carpentaria,-15.5,137.5,idigbio_geopoint_recovery,
+405A8AB9-2C6B-4C53-8936-F7992C07E086,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+408AF83E-EA3E-4889-BE3C-8B2616BF24B7,iDigBio,south east gulf of carpentaria,-16.55,141.166,idigbio_geopoint_recovery,
+40D0B86C-2BDD-4DD3-80FF-C94A08CC627A,ALA_echinodermata,"Mooloolabah, 50 miles North of Brisbane",-26.68,153.12,locality_gazetteer_geocoding,3000.0
+40E82074-4F47-4BA7-8123-58A19EF95F9F,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+41710D81-68AB-42BF-AD54-22AB0C9FB3A2,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+419DB34D-3441-4636-B72D-1EA31E875D15,iDigBio,"west of topsy creek, east gulf of carpentaria",-15.47499,140.88666,idigbio_geopoint_recovery,
+440004EB-B487-40C2-90C3-982F401C4DEC,iDigBio,south east corner of gulf of carpentaria,-16.41999,141.07832,idigbio_geopoint_recovery,
+451A7E8A-9EA1-4635-8662-3C8552389A06,iDigBio,gulf of carpentaria,-16.43999,141.05583,idigbio_geopoint_recovery,
+47AB4765-7E6F-4012-AA76-668A71D96BC1,iDigBio,"porpoise cay, wreckreef",-22.216,155.3,idigbio_geopoint_recovery,
+48E18D02-387A-4818-9BB5-515BCEDBCEE2,ALA_echinodermata,Port Molle,-20.2667,148.7,locality_gazetteer_geocoding,5000.0
+49BF0A69-141E-40E2-80FF-F4BEEF1301A8,GBIF_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+4A7E7693-8891-4614-8542-86EC39915012,ALA_echinodermata,"Waining Reef, 1st snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+4B658192-E4F3-4902-8D45-AE47EE189320,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+4B8EAB47-6165-479B-97AD-4D1E43BFBF58,ALA_echinodermata,Southport,-27.96,153.42,locality_gazetteer_geocoding,3000.0
+4DAA0C79-7757-4DD3-971D-C5E062A5D0ED,iDigBio,south east corner of gulf of carpentaria,-16.74833,140.05333,idigbio_geopoint_recovery,
+4DD35BA2-B254-403D-98F2-EA94EB61D5BE,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+4E436259-2277-49A1-812A-579360D37EAF,ALA_echinodermata,Waining Reef,-19.0,147.35,locality_gazetteer_geocoding,8000.0
+4E81EE7A-4B4D-49CB-8E55-432385CEEBB9,ALA_echinodermata,Wistari Reef,-23.47,151.88,locality_gazetteer_geocoding,3000.0
+4F422FA8-9243-4369-9C8B-B81E68B5AB9E,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+52B1EA66-5F7C-43D2-81C3-AEC052FBC88D,ALA_echinodermata,Wistari Reef,-23.47,151.88,locality_gazetteer_geocoding,3000.0
+52ED730A-4F5E-4F99-AE65-FC048D0F8B2E,iDigBio,coral sea commonwealth marine reserve,-23.64499,154.65175,idigbio_geopoint_recovery,
+52FB717E-E545-4579-9626-C949F8CBE65E,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+5313A650-1987-414C-99C0-5E90964BD672,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+536C91AC-3DB2-4F74-B984-DA534E4DB1DF,iDigBio,gulf of carpentaria,-13.983,139.0,idigbio_geopoint_recovery,
+53968E40-4A6A-47EF-B33A-F6CF32AE16FA,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+5532D3BF-B4DC-4590-A2A1-355BB26E80EF,iDigBio,south east corner of gulf of carpentaria,-17.12499,140.42499,idigbio_geopoint_recovery,
+55B61F82-1AC8-47A5-B7D0-260F400248D9,iDigBio,"south east corner, gulf of carpentaria",-16.4,140.861,idigbio_geopoint_recovery,
+55D66EC8-DA93-4C1E-A5EC-846558B3E3B7,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+561ABDB8-50E3-48B8-AACB-6A1B845345C7,ALA_echinodermata,"Thursday Island, Murdering Point",-10.5833,142.2167,locality_gazetteer_geocoding,3000.0
+56F4D84E-A668-4421-B1D5-12CF24F2B796,ALA_echinodermata,"Stradbroke Island, Moreton Bay",-27.2,153.35,locality_gazetteer_geocoding,10000.0
+57D16AFB-A059-461E-8460-02029EAD7D4F,ALA_echinodermata,Townsville,-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+57DAB658-A3B3-4A65-960E-CA8E2CE01C2C,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+5809E4FD-8C15-435C-BDAD-5F2192C6A6EA,ALA_echinodermata,"Waining Reef, 1st snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+5818134C-D0D5-404C-926E-CE0C33AA2B25,iDigBio,"west of nassau river, gulf of carpentaria",-15.883,141.033,idigbio_geopoint_recovery,
+5845AE9E-EBAB-4307-8E79-EE83E5E43CCC,iDigBio,off fraser island,-25.3383,154.07221,idigbio_geopoint_recovery,
+585CCAEF-37E5-436C-942D-51097384661E,ALA_echinodermata,Currumbin,-28.13,153.48,locality_gazetteer_geocoding,3000.0
+585F0B43-D945-4065-9770-AA03054A79D2,iDigBio,gulf of carpenteria,-13.983,139.0,idigbio_geopoint_recovery,
+594DC9F3-BFC1-45CD-BDB6-889D4BE2F739,iDigBio,"west of fitzmaurice point, south east gulf of carpentaria",-17.183,140.933,idigbio_geopoint_recovery,
+59BE6E80-8EA1-481A-8A64-BC0A1A09657C,iDigBio,south east corner of gulf of carpentaria,-17.12832,140.82832,idigbio_geopoint_recovery,
+5AD407EB-8C22-4F60-A380-17A6F6228039,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+5BE5B860-3DE3-41D7-9D62-1CD690465D81,iDigBio,gulf of carpentaria,-13.983,139.0,idigbio_geopoint_recovery,
+5CB745C4-F957-4CD9-B58B-9DB0B8B37688,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+5D1659C1-D2AF-4EDA-A72D-D3CED569EEBD,iDigBio,south east corner of gulf of carpentaria,-16.666,139.96166,idigbio_geopoint_recovery,
+5D8423EF-0468-488E-A5FC-4C4781272DE3,GBIF_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+5DFC192E-D51B-4B0D-A451-EE725635BD03,ALA_echinodermata,Waining Reef,-19.0,147.35,locality_gazetteer_geocoding,8000.0
+5F7CE473-EABC-4B1D-BE81-897A5221B707,ALA_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+5FEE08CD-1CE2-4583-BBA8-F1037879134C,ALA_echinodermata,"Mooloolabah, 50 miles North of Brisbane",-26.68,153.12,locality_gazetteer_geocoding,3000.0
+606AED1B-5151-472F-835B-3A2D63973770,iDigBio,south east corner of gulf of carpentaria,-17.03666,140.27499,idigbio_geopoint_recovery,
+60AB6D56-27E9-40DF-AABD-9F8E87CFB022,ALA_echinodermata,Farquharson Reef,-15.43,145.37,locality_gazetteer_geocoding,5000.0
+60B38015-9207-4DA3-8CE8-0A316E5783D4,ALA_echinodermata,"Waining Reef, 1st snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+61DAD4E3-0210-49EF-BBAF-E24EB35CA07E,GBIF_echinodermata,"Off Weipa, Gulf of Carpentaria",-12.6833,141.8667,locality_gazetteer_geocoding,5000.0
+62C2C1E1-4452-4AE5-98DD-5EC7421A0AAA,ALA_echinodermata,"Great Barrier Reef, One Tree Island",-23.5028,152.0917,locality_gazetteer_geocoding,2000.0
+62E5A5D2-014F-4612-88A8-526FE1A963E5,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+632B9C2E-98FF-41D3-B125-64C1559AD02F,ALA_echinodermata,"Coolum Beach, between Second Bay and First Bay",-26.53,153.1,locality_gazetteer_geocoding,3000.0
+636605BD-743E-44D7-84DF-EEDED192A003,iDigBio,south east corner of gulf of carpentaria,-16.64499,140.08499,idigbio_geopoint_recovery,
+63BE8CE7-EFA3-486F-B5B3-83FD53344DA1,ALA_echinodermata,"Lizard Island, northern lagoon",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+642E909F-A7BB-4FA1-836F-851CAE8871BE,ALA_echinodermata,"Low Island (or Low Isles), off Port Douglas",-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+64A10C43-C9A6-4DAD-983C-FBF5B1305383,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+6524CF80-B3C7-4567-9B2E-E51C2D9DB0AF,iDigBio,south east corner of gulf of carpentaria,-16.716,140.583,idigbio_geopoint_recovery,
+6634C0B8-3559-4071-8FC8-C4C3E90BF334,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+66A1B580-3760-4932-BA59-E350C4E78EBC,iDigBio,"gulf of carpentaria, south east corner",-16.5,141.0,idigbio_geopoint_recovery,
+670C8110-186C-4CF2-A959-B1686E73AE0C,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+6A31F498-12AD-493C-A4F2-1A433612BA3F,ALA_echinodermata,Waining Reef,-19.0,147.35,locality_gazetteer_geocoding,8000.0
+6A3E8C80-D76B-4285-B35B-057C79C1F3C2,iDigBio,south east corner of gulf of carpentaria,-16.66,140.03666,idigbio_geopoint_recovery,
+6A84A161-F18D-4539-9658-BDA35E6DDFAF,iDigBio,"west of bardon island, torres strait",-10.0,142.5,locality_gazetteer_geocoding,50000.0
+6AEE5044-8D0A-4F38-8960-8E1704BF2FA1,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+6B2A64D5-9084-4021-81CA-5AD29A85ACF3,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+6BCB3782-B2B8-4A33-B63E-AD558B8E425E,iDigBio,south-east corner of gulf of carpentaria,-16.67999,140.366,idigbio_geopoint_recovery,
+6C6A4F68-F3A3-4D60-A760-FD78C495E2FD,iDigBio,"west of topsy creek, gulf of carpentaria",-15.5,141.466,idigbio_geopoint_recovery,
+6DB71531-AD37-4BA0-8869-A771061B4705,ALA_echinodermata,"Lizard Island, 50 m W of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+6E455341-FE39-4ED1-AF3D-9DD89BCA0879,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+6EBC0B04-AA69-4289-A691-BDF0B462CE58,ALA_echinodermata,Swain Reefs,-21.65,152.25,locality_gazetteer_geocoding,20000.0
+6EBCFDF7-6192-4DE8-9635-34C5E9AB6846,iDigBio,south east corner of gulf of carpentaria,-16.59499,140.083,idigbio_geopoint_recovery,
+6F6F936D-04B8-4E2E-A7FD-B3930A0E5CB1,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+7217DC3A-25DB-4803-BCCA-FA4716FF41C6,iDigBio,south east corner of gulf of carpentaria,-17.37832,139.67332,idigbio_geopoint_recovery,
+733EE79D-0D46-4867-A90D-73983010D32D,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+746AD257-4E2A-4A49-AC54-683C27203D52,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+7771D534-C53B-439D-B5CB-46C887E5169D,ALA_echinodermata,"Lizard Island, 50 m W of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+7843398F-EEB6-4629-A86A-AD1AC9FABEEA,iDigBio,south east corner of gulf of carpentaria,-16.56999,140.97666,idigbio_geopoint_recovery,
+79F073E8-2EFB-4116-A7D3-B3F0F671A249,ALA_echinodermata,"Lizard Island, first shallow bay E of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+79FF8FB2-6E33-49D2-A4A4-984724D44E10,ALA_echinodermata,"Great Barrier Reef, One Tree Island",-23.5028,152.0917,locality_gazetteer_geocoding,2000.0
+7A997B2A-477C-4D33-9070-F4DDC0EA6F1F,ALA_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+7C0BA0A3-2E46-4E47-AB16-3107CCC46F9E,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+7D4A57D5-0878-44B7-A28A-EEE66EF7AF2B,iDigBio,south-east corner of gulf of carpentaria,-17.416,140.783,idigbio_geopoint_recovery,
+7F665931-A1DD-4CAE-8842-B1B196104B0D,ALA_echinodermata,"Lizard Island, Yonge reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+7F7BE43A-325A-4C15-9004-539B6679A65E,iDigBio,"west of edward river, gulf of carpenteria",-14.74166,141.30166,idigbio_geopoint_recovery,
+7FED6CAC-02AE-4FE3-BD85-F6491326AB73,GBIF_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+7FFC44C7-1899-4B63-8B23-D21621D96D75,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+7FFCC57D-A8B3-479D-BC36-BCE87CE79C9E,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+800926F4-F901-431C-A044-BF940F115807,iDigBio,"cato island, coral sea",-23.25,155.533,idigbio_geopoint_recovery,
+807DF511-6463-4747-87E8-E5DF3288D1B7,iDigBio,gulf of carpenteria,-13.983,139.0,idigbio_geopoint_recovery,
+80C43833-30AD-493F-81D5-9C4562F306D2,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+81D57332-A688-411F-89E7-6B9A73A9D4C8,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+823DFA18-35EC-4CD8-BB6D-FFCEF0F4F6DE,iDigBio,south east corner of gulf of carpentaria,-17.35333,140.45,idigbio_geopoint_recovery,
+84A9D431-4077-4C38-9267-25583FE29FCB,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+84B02FF2-BB75-434D-A644-2958456E3C3A,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+84FE2458-0F96-4316-9167-07F259DD27AE,iDigBio,south east corner of gulf of carpentaria,-17.12499,140.42499,idigbio_geopoint_recovery,
+878D1113-037D-4FD3-A6F1-5E43D54421F1,ALA_echinodermata,Port Denison,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+87CA7C1D-6C24-4628-B622-FF551322C2E7,iDigBio,"west of bardon island, torres strait",-10.0,142.5,locality_gazetteer_geocoding,50000.0
+884F1432-E394-4CB6-A4FF-FBE316005DF6,ALA_echinodermata,"Lizard Island, Day Reef, station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+88AEC691-A47A-43ED-8B4C-08775DD736D4,iDigBio,south east corner of gulf of carpentaria,-16.74166,140.68999,idigbio_geopoint_recovery,
+8A315B2E-95FE-46B5-8E43-392CB4D2BCAD,ALA_echinodermata,"Lizard Island, first shallow bay E of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+8A507E34-822D-4ED1-82E9-A68073F1ED71,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+8B3A6666-4AAB-48CC-BEAE-F4A8B63E7C97,ALA_echinodermata,"Waining Reef, 1st snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+8B5CFE84-1E6D-4CF7-BC5A-AE1E61FADDA7,ALA_echinodermata,"Stradbroke Island, Moreton Bay",-27.2,153.35,locality_gazetteer_geocoding,10000.0
+8C74D772-1A52-4394-BAF3-EBB3FE4AF9CD,iDigBio,south east corner of gulf of carpentaria,-16.483,141.03833,idigbio_geopoint_recovery,
+8CA0AEDF-1AA6-43D4-9F80-DFDEF7807706,ALA_echinodermata,Port Curtis and Prince of Wales Channel,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+8CB1A220-F5C3-4FFC-B341-35E435648126,iDigBio,"north west of edward river, gulf of carpentaria",-14.54166,141.19166,idigbio_geopoint_recovery,
+8CC2E293-EB99-49BA-8B25-8CFFDDF933D9,iDigBio,south east corner of gulf of carpentaria,-16.82499,140.53666,idigbio_geopoint_recovery,
+8ED3DE01-F14D-455A-BB28-2E399009301E,iDigBio,south east corner of gulf of carpentaria,-16.86,140.12832,idigbio_geopoint_recovery,
+8EFE93DE-060C-45D2-87B5-B649F7FF7691,ALA_echinodermata,Low Isles,-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+8FDDFCA4-494C-47B4-B942-884C64F389BC,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+90653EFB-3895-4B4E-A1DE-ABB899E9446D,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+9238AEFB-DC19-46A8-B241-CB34AAB0201F,iDigBio,"wreck reef, coral sea, bird island",-22.17499,155.46166,idigbio_geopoint_recovery,
+945B8A50-CEF6-4425-87C6-E6BFA90A31A4,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+94773958-4620-414A-A955-D655CA72F310,ALA_echinodermata,Myora,-27.45,153.42,locality_gazetteer_geocoding,3000.0
+94F2AF6B-EC12-4A14-8E51-7067600B1F32,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+958A0B1A-8068-46EC-89BC-E266678E01C0,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+966C3702-3A76-469A-B9A2-BE24408155D6,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+9691110B-C67B-4704-9F8B-5B279A40E919,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+9727180D-CA1E-44AB-AD42-DF6C97B2896A,iDigBio,"off taku lighthouse near islet amedee, noumea",-22.266,166.433,idigbio_geopoint_recovery,
+97A2344D-10E1-433C-9E9E-99F13281416C,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+9825BA6C-7543-4F87-8062-9DF98EC46EF4,iDigBio,south east corner of gulf of carpentaria,-16.633,140.17832,idigbio_geopoint_recovery,
+9882A199-0428-4E40-888F-97C2636662C2,iDigBio,coral sea commonwealth marine reserve,-23.64499,154.65175,idigbio_geopoint_recovery,
+989B2944-6EC1-4512-B701-440C5C87EE6C,iDigBio,,-16.383333,145.566667,idigbio_geopoint_recovery,
+992A3CA3-11BE-406F-AEEF-4FBC50296058,ALA_echinodermata,near Raine's Islet,-11.59,144.04,locality_gazetteer_geocoding,5000.0
+9A482120-440C-41F8-942A-B888ED735B5C,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+9A5D85C7-9BF6-479B-9813-BA9D8B575BEB,iDigBio,south east corner of gulf of carpentaria,-16.67832,140.47832,idigbio_geopoint_recovery,
+9A628725-BF07-4B8C-93F7-6B9DBB4C1AD8,iDigBio,south east corner of gulf of carpentaria,-17.25,140.48999,idigbio_geopoint_recovery,
+9B022A8D-2FA5-4E69-BE14-6E85F8B1DE92,iDigBio,"bird island, wreck reef, coral sea",-22.17499,155.46166,idigbio_geopoint_recovery,
+9BEF638A-08A3-4B06-A8D3-BF5A5D3CA437,iDigBio,gulf of carpentaria,-13.983,139.0,idigbio_geopoint_recovery,
+9C8833C3-7F93-423B-BC95-AF8817108DD6,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+9E09F07F-678D-4D9B-A21B-6F7C2AA6B1EB,iDigBio,gulf of carpentaria,-16.5,141.0,idigbio_geopoint_recovery,
+9E65F761-83B2-402C-AA36-F7636FF66FF9,iDigBio,"pearce island, sir edward pellew group, gulf of carpentaria",-9.5,143.3,idigbio_geopoint_recovery,
+A018E894-F7C3-433D-84EF-DE8A637B6BBB,ALA_echinodermata,"Coolum Beach, between Second Bay and First Bay",-26.53,153.1,locality_gazetteer_geocoding,3000.0
+A07D4D93-CC84-446D-8EDB-F11A40FCE3B9,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A13CAFFB-E9D5-4D47-AF68-E3AC608EA715,ALA_echinodermata,Keppel Sands,-23.33,150.8,locality_gazetteer_geocoding,5000.0
+A18E84AB-D877-4589-89AB-2C40C1496C1C,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A19907E6-FB28-4DFA-91FF-2D87E4229369,ALA_echinodermata,"Lizard Island, first shallow bay E of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A221D499-9BF0-4EB2-8EDA-2F73E84CBC54,iDigBio,"16 km south-west of mapoon, gulf of carpentaria",-12.033,141.75,idigbio_geopoint_recovery,
+A2232BBD-28B4-46D4-AEC2-67A546BCC766,ALA_echinodermata,Port Denison,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+A226FB56-088A-41EA-91E5-CA746F90347F,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+A229D618-58A4-4DC1-879A-9E6B397BAAD6,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+A28E2F1F-BE21-4EC4-87CB-306B1FF872B2,iDigBio,south east corner of gulf of carpentaria,-16.41999,141.07832,idigbio_geopoint_recovery,
+A28FBE6C-9EC8-4635-B3CD-A8D226B9FC08,ALA_echinodermata,"Lizard Island, first shallow bay E of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A2AC5050-1FDB-4A59-B337-15784AD3AF36,iDigBio,south east corner of gulf of carpentaria,-16.56999,140.97666,idigbio_geopoint_recovery,
+A2FAC83E-1BB9-4F2D-AFD6-282CD507728E,iDigBio,south east corner of gulf of carpentaria,-16.566,139.93999,idigbio_geopoint_recovery,
+A388DE04-48A0-4128-82D0-49239A65CC79,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A3B446A4-CE41-45E3-AD38-018DE4EDBC25,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+A4097112-779D-4ED0-B9A6-CCE3E36FA0C8,iDigBio,"wreck reef, coral sea, bird island",-22.17499,155.46166,idigbio_geopoint_recovery,
+A46733BD-24DB-4AA4-A89A-FB9987411F13,iDigBio,off fraser island,-25.3383,154.07221,idigbio_geopoint_recovery,
+A4B062F0-695D-4B62-8BF7-3595383B2093,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+A4B0E8A3-D49A-436E-9856-BD6F63FE702B,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+A5B698A7-9C00-4C79-88B1-C98DED3078A2,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A69718B3-BA6A-4275-94E7-684E90FEEC41,iDigBio,south east corner of gulf of carpentaria,-17.03666,140.27499,idigbio_geopoint_recovery,
+A7F82D77-245A-4361-9744-9B6F5B84236F,iDigBio,"west of point burrowes, gulf of carpenteria",-16.966,140.966,idigbio_geopoint_recovery,
+A83F676F-28FA-48EA-B003-2F3BE560CACA,iDigBio,south east corner of gulf of carpentaria,-16.62499,140.3,idigbio_geopoint_recovery,
+A9006C5E-88F0-496D-BE92-C8364E112ACC,iDigBio,gulf of carpentaria,-13.983,139.0,idigbio_geopoint_recovery,
+A9CD292E-8038-49C0-897C-443B53B98DF6,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A9ECDE50-D141-4331-9C15-FEAF6CFF418E,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+A9EE0694-66D6-4A1A-91C2-8EC67585C534,iDigBio,gulf of carpentaria,-15.5,138.0,idigbio_geopoint_recovery,
+AB0C06D1-6194-44A5-99BD-4D64E8C86AA5,iDigBio,south east corner of gulf of carpentaria,-16.716,140.14666,idigbio_geopoint_recovery,
+ACF0F641-17D0-451C-975F-7E02AC1F120C,ALA_echinodermata,"Lizard Island, Day Reef, station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+AEC3B127-049F-4197-B7F3-900D7BD58D47,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+AF50B4DB-82CA-4854-8D39-C466F5F95F5E,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+AF944184-BD75-4827-B238-8838DADBB254,iDigBio,"south-east gulf of carpentaria, west of fitzmaurice point",-16.183,140.933,idigbio_geopoint_recovery,
+AFB24C1B-219E-4244-847C-BCE245030A3F,ALA_echinodermata,"Waining Reef, 1st snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+B0350EA5-96CB-49B7-82E6-5C2FDD2D9EE0,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+B1A14698-BF0D-4E9F-9A79-8A48FAE8C106,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+B210B648-76F2-4F6C-8425-30B11828CF03,ALA_echinodermata,"Lizard Island, S face of reef front",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+B2944B7C-86FF-4C02-A845-0C8A4EE36B78,iDigBio,south east corner of gulf of carpentaria,-17.12499,140.42499,idigbio_geopoint_recovery,
+B2DF4272-AF77-429F-A288-BD52565C90BC,iDigBio,south east corner of gulf of carpentaria,-16.965,140.68666,idigbio_geopoint_recovery,
+B31A6FEC-41CA-403B-AC34-A09211E06B4D,iDigBio,pearce island,-9.5,143.3,idigbio_geopoint_recovery,
+B3361755-F6A9-48FE-8F99-9B6DD5A847D2,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+B377B05F-7DFA-42BC-B99E-C4C390CDC826,iDigBio,coral sea commonwealth marine reserve,-23.76194,154.62749,idigbio_geopoint_recovery,
+B3939765-D324-4D38-87AC-D1923A7B01D5,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+B3F95BB9-EE76-4A63-BD5A-9439AE9B4213,iDigBio,south east corner of gulf of carpentaria,-16.92832,140.38833,idigbio_geopoint_recovery,
+B4722DF7-F54D-4A2C-B43C-93F1D9E1B5D6,iDigBio,,-23.44855359961059,151.91745405428446,idigbio_geopoint_recovery,
+B522D25B-456D-47C1-9891-80B281D9AAD8,iDigBio,south east corner of gulf of carpentaria,-16.87499,140.57832,idigbio_geopoint_recovery,
+B5DF8789-F9FA-48DE-A8DE-6B7E0FA1374D,ALA_echinodermata,"Lizard Island, Snake Pit station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+B60763E3-6DB1-4D22-9B5D-8002A089AB48,iDigBio,"wreck reef coral sea, bird island",-22.166,155.45,idigbio_geopoint_recovery,
+B6703A71-56D5-4C16-84C2-5608B26488D4,iDigBio,south east corner of gulf of carpentaria,-17.25,140.48999,idigbio_geopoint_recovery,
+B774A630-FFCD-40BD-BEC3-F5D6691B0292,iDigBio,south east corner of gulf of carpentaria,-16.72166,140.68166,idigbio_geopoint_recovery,
+B8E4F864-1B84-47E2-9278-214170DF3C8A,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+B8EB9B8C-DDA0-4FE2-A1D7-77229F3B2185,ALA_echinodermata,"Coolum Beach, between Second Bay and First Bay",-26.53,153.1,locality_gazetteer_geocoding,3000.0
+B93F9DEE-54CE-4ECB-934A-C274FFFF67A0,iDigBio,gulf of carpentaria,-13.983,139.0,idigbio_geopoint_recovery,
+B943FDD9-2A06-469B-8ADB-3BAF166FE73F,ALA_echinodermata,Port Denison,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+B96AFFDC-0FFF-471E-9367-56C711D0389A,iDigBio,south east corner of gulf of carpentaria,-16.56916,140.97249,idigbio_geopoint_recovery,
+B9F4DA9C-1C53-4BC9-939B-5C5A579BC0A8,ALA_echinodermata,"Lizard Island, northern lagoon",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+BA566BC7-5E41-49A2-8935-3E0568DA9285,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+BAF4AA53-2869-4466-83FF-5634512EB03B,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+BB4F9132-6431-482B-A9C9-E12C6E19703F,iDigBio,south east corner of gulf of carpentaria,-16.72166,140.68166,idigbio_geopoint_recovery,
+BDE08368-66F5-46E3-8044-39A03AB99EAF,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+BE0A1E0C-FD72-4864-A439-527FA7F0DD8B,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+BF0EDACF-95F9-4853-BFE8-73C2A83EB9FF,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+BF6487C4FB742,ALA_echinodermata,"off Townsville, 3-8km SE of city",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+BFE13ABE-24AB-422E-829B-9D93124FA952,iDigBio,gulf of carpenteria,-16.80333,140.59333,idigbio_geopoint_recovery,
+C06C3641-D795-4DD1-932F-89AC55E3879C,iDigBio,south east corner of gulf of carpentaria,-16.96166,140.57166,idigbio_geopoint_recovery,
+C16A9C68-9E9A-41D0-BD3D-33895F5903DE,iDigBio,"north east side of west island, wreck reef, coral sea",-22.166,155.25,idigbio_geopoint_recovery,
+C27602BC-C771-4A80-9C84-6E3D39C5F174,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+C2E7E920-9A2C-4158-97E9-EAD10A40B0E0,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+C2F74619-E155-45A5-B17B-12709F54941A,iDigBio,south east corner of gulf of carpentaria,-16.483,141.03833,idigbio_geopoint_recovery,
+C32B70BA-46C9-46F0-B77D-956990294EC9,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+C35A5CE7-02F2-4852-B445-6020476DC68C,iDigBio,south east corner of gulf of carpentaria,-16.90333,140.73666,idigbio_geopoint_recovery,
+C3803563-DBD0-4F6C-AAE6-D4616DF7082A,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+C481B974-366B-4DC2-AE90-F740325E04DA,ALA_echinodermata,"Seaforth, near Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+C4BEE513-4D9D-47D6-BB21-1A6CF38B78A4,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+C4D4FECF-8290-4D18-BCFE-E449F6961717,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+CA7E08B2-5C2B-4CBA-8F49-3F02373E6539,iDigBio,gulf of carpenteria,-16.5,141.0,idigbio_geopoint_recovery,
+CAT_K1982,ALA_echinodermata,"Lizard Island, North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CAT_K1983,ALA_echinodermata,"Lizard Island, North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CAT_K1984,ALA_echinodermata,"Lizard Island, North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CAT_K1995,ALA_echinodermata,"Lizard Island, Horseshoe Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CAT_K2005,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CAT_K2007,ALA_echinodermata,"Lizard Island, Watsons Bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CAT_K2049,ALA_echinodermata,"Lizard Island, Sanake Pit",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CAT_K6008,ALA_echinodermata,Lizard Island | South Bay Point,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+CBE1DEBE-3778-4493-9AFE-87CB452DF1DE,iDigBio,"bird island, wreck reef, coral sea",-22.166,155.45,idigbio_geopoint_recovery,
+CF133DCB-41AB-499D-81ED-D2880CDBB526,ALA_echinodermata,Port Molle,-20.2667,148.7,locality_gazetteer_geocoding,5000.0
+CF19AFCB-7C1B-4872-8FE8-39504D07F888,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+CF336669-FC90-4B46-B8D4-26961665AB1D,iDigBio,south east corner of gulf of carpentaria,-16.633,140.17832,idigbio_geopoint_recovery,
+CF7F0815-73BF-4271-9AD6-82F7C693F4FD,iDigBio,"west of gilbert river, gulf of carpentaria",-16.566,141.0,idigbio_geopoint_recovery,
+D1A10D30-E720-44CF-AA7E-1E2A1E59810B,iDigBio,gulf of carpentaria,-13.983,139.0,idigbio_geopoint_recovery,
+D1CEC3D5-1B9C-4405-9715-734DC3F31DF0,ALA_echinodermata,"Lizard Island, 50 m W of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+D34D66FC-A0C5-448B-AD0C-66ADC32C6114,iDigBio,gulf of carpentaria,-16.93166,140.26166,idigbio_geopoint_recovery,
+D37029C7-C388-46CD-8539-9592B54FC9AE,ALA_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+D45EBE50-05C9-4ED8-A3A4-607185939A0E,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+D4A0D5D3-03D7-429E-8E65-ED7AF6F4FA94,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+D4D9F73C-B8DD-4426-B217-9C2568347894,ALA_echinodermata,Sudbury Reef,-16.98,146.13,locality_gazetteer_geocoding,5000.0
+D5307BF9-6076-4F56-B75A-F41539150B10,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+D59A950D-9E02-47A5-8C21-9B718CA0C04F,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+D6B230C8-8EE1-457F-B485-D0C97DBCC152,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+D71BFCF5-893E-4193-AB0D-0CB19B83FDB2,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+D7773B6E-2255-451A-B357-E951BB9FDEC4,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+D77CA1DB-1503-4B49-8C19-060FC2105156,iDigBio,gulf of carpentaria,-16.5,141.0,idigbio_geopoint_recovery,
+D7C89340-4800-4E34-95F9-E0A98B68006A,ALA_echinodermata,Port Denison,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+D7F778D9-54A8-4DBD-BFB4-B5D68405CC39,ALA_echinodermata,"Lizard Island, Day Reef, station 2",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+D88EF2C9-6705-4D15-BD57-2397C090EFDC,iDigBio,south east corner of gulf of carpentaria,-16.92832,140.38833,idigbio_geopoint_recovery,
+D90583DD-3439-4169-825D-D57F588CDB30,iDigBio,"west of fitzmaurice point, s.e. gulf of carpentaria",-17.2,140.25333,idigbio_geopoint_recovery,
+D92718EB-739E-40B2-B5C7-202DED03FEBD,ALA_echinodermata,Wistari Reef,-23.47,151.88,locality_gazetteer_geocoding,3000.0
+D9B89F5D-AF69-4090-A9CD-AFB111040A5D,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+D9D0275A-B7C9-4DCD-A3F9-642A51B8D999,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+D9F3AC43-49EF-4A50-9400-19A1CA82993A,iDigBio,coral sea commonwealth marine reserve,-23.60194,154.19444,idigbio_geopoint_recovery,
+DAA07881-6C3E-4118-B06E-1FBB98C514EB,ALA_echinodermata,"Lizard Island, 50 m W of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+DAB2962E-943D-47B3-8CDB-1DFAF0E21AFF,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+DAC16014-4326-432E-8C89-12A2CA5FD4E7,ALA_echinodermata,"Mackay, North Queensland",-21.1411,149.186,locality_gazetteer_geocoding,5000.0
+DAD0B9B4-1C32-44CE-9762-9EE29C83C0BC,iDigBio,gulf of carpentaria,-16.5,141.0,idigbio_geopoint_recovery,
+DB19DA58-FCE4-4E31-8A22-F7B71F472927,ALA_echinodermata,Sudbury Park,-16.98,146.13,locality_gazetteer_geocoding,5000.0
+DC88AAA3-569B-4CCA-853C-854FD04D48D1,iDigBio,south east corner of gulf of carpentaria,-16.85666,140.23999,idigbio_geopoint_recovery,
+DCCBDD6C-0B39-46DB-A98F-4B54A2A5DD6F,ALA_echinodermata,Myora,-27.45,153.42,locality_gazetteer_geocoding,3000.0
+DE1A0D9A-2FB6-4A19-928A-7EF64E3DD0B9,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+DE50BA17-D330-40A7-B649-0B361778D511,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+DE5945F2-F1E4-4A29-82CD-EAA10D3263F2,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+E0263B7D-97B3-4D51-B77E-620040EEB9C2,ALA_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+E03E507A-2DEC-4304-B520-7099F3B5A592,ALA_echinodermata,"Lizard Island, Day Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+E04810B8-E7AE-4811-89A2-E03DA4261F01,iDigBio,"south east corner, gulf of carpenteria",-16.44433,141.05833,idigbio_geopoint_recovery,
+E0F4ABA8-F2B1-4E4C-BCF3-E957D77D77E6,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+E14A2D41-1BB6-419B-A96C-216DDB328827,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+E1DC11BB-E711-4DF7-A45F-6109DF0E5633,iDigBio,south east corner of gulf of carpentaria,-16.633,140.17832,idigbio_geopoint_recovery,
+E3E20CAC-0D3D-454B-A178-6476DFDE9FC4,ALA_echinodermata,Low Island (or Low Isles),-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+E41AC4AD-4AF0-4389-A9C5-54CC3FC6B67D,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+E42B6AC5-AEFD-4BBF-A500-66FB3B7CDD6C,iDigBio,coral sea commonwealth marine reserve,-23.60194,154.19444,idigbio_geopoint_recovery,
+E4D03EFE-1D6A-4A36-A0AB-F57D2BB12F85,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+E4EDC176-CD75-4A88-B0CF-61297A1FBDA6,ALA_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+E5787CA9-DE49-4931-AC49-D4028F7C9AE5,ALA_echinodermata,Wistari Reef,-23.47,151.88,locality_gazetteer_geocoding,3000.0
+E6CB0071-2EC5-45BB-8BCF-A44854C13147,GBIF_echinodermata,BEACH NEAR CALOUNDRA QLD. AUSTRALIA.,-26.8,153.13,locality_gazetteer_geocoding,3000.0
+E812B836-5B47-4BB2-BD22-D1B0A56B2017,ALA_echinodermata,"Lizard Island, first shallow bay E of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+E8BF7F94-889F-486A-A288-AD4BD5709F26,ALA_echinodermata,Cape Hillsborough,-20.9167,149.05,locality_gazetteer_geocoding,3000.0
+E8E3CCAA-6426-49BA-B520-327C15E1B4F2,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+E8F07171-B69F-417F-9C72-0BD2F678F944,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+E9E4C746-2847-4E9C-AA41-10C04340CC5C,iDigBio,south east corner of gulf of carpentaria,-16.79499,140.16333,idigbio_geopoint_recovery,
+EA27056D-AFE4-4150-9937-5A0C30774CC6,ALA_echinodermata,"Wheeler Reef, Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+EACA6732-4284-4450-8E4A-C1896D75B482,ALA_echinodermata,"Lizard Island, 50 m W of Lumus beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+EB4614C7-4DD1-4C89-B093-94F9E4F7DDAE,ALA_echinodermata,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+ED7EFEC8-42DB-4824-A23E-CFB3C0927742,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+ED9F71B0-8278-4880-97B6-AE3BE9491950,ALA_echinodermata,"Wistari Reef, Heron Island",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+EDE36310-D587-4D8C-92E6-50FA123F2ED0,ALA_echinodermata,"Lizard Island, northern lagoon",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+EDEFA4BB-305B-4A74-9AA5-BA342510F608,iDigBio,south east corner of gulf of carpentaria,-16.56999,140.97666,idigbio_geopoint_recovery,
+EE28380B-B0EC-4E6D-8923-93A19F929578,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+EEC47F43-E6BC-41EB-9C68-016983BB68AE,ALA_echinodermata,Pixie Reef,-16.78,146.1,locality_gazetteer_geocoding,5000.0
+EFA0246A-AD2F-4D26-AA92-F23A7A7936E5,ALA_echinodermata,"Waining Reef, 2nd dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+EFC9E612-666E-4C6C-8251-A1117573F80E,ALA_echinodermata,"Lizard Island, northern lagoon",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+F1503207-3A95-437A-AD61-5567E8E7D1E2,ALA_echinodermata,"Lizard Island, northern lagoon",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+F176EF25-E185-40C0-A488-7753C330631B,ALA_echinodermata,Currumbin,-28.13,153.48,locality_gazetteer_geocoding,3000.0
+F1A8A62C-ADAC-484C-947F-052216E4218A,ALA_echinodermata,"Lizard Island, Larger mangrove bay",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+F1FC34B2-9478-4336-BFB5-6742A7171D07,ALA_echinodermata,"Mackay, North Queensland",-21.1411,149.186,locality_gazetteer_geocoding,5000.0
+F2F1A547-1769-4A4F-A308-926D682C15B5,iDigBio,south east corner of gulf of carpentaria,-16.85666,140.17999,idigbio_geopoint_recovery,
+F3BA0430-DE5E-4BC6-9FF7-9F11A1A524A3,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+F48E3E94-EC12-4901-B60D-4F3283F60555,iDigBio,"south of sweers island, gulf of carpentaria",-17.1,139.616,idigbio_geopoint_recovery,
+F4B3D1EB-C09F-490E-B1E6-7EAC80B291E2,ALA_echinodermata,Waining Reef,-19.0,147.35,locality_gazetteer_geocoding,8000.0
+F54A4121-991B-4643-9B77-AC7D9C60D674,ALA_echinodermata,Heron Island,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+F54AF739-F6A4-468D-80FD-0A1EC1C25187,ALA_echinodermata,"Yonge Reef, Great Barrier Reef",-14.58,145.63,locality_gazetteer_geocoding,5000.0
+F6105853-F33A-4608-81C8-B5E3470B00E8,iDigBio,south east corner of gulf of carpentaria,-16.72832,140.633,idigbio_geopoint_recovery,
+F6C31737-43F0-477B-A5A2-63B005E43C1F,ALA_echinodermata,"Lizard Island, northern lagoon",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+F7CEFF5E-D029-4D7A-9C5B-81DC09095032,iDigBio,coral sea commonwealth marine reserve,-23.64499,154.65175,idigbio_geopoint_recovery,
+F90790FC-56A8-442A-82B4-BC1890B113A0,ALA_echinodermata,Cape Moreton,-27.03,153.47,locality_gazetteer_geocoding,3000.0
+F934FAC1-E733-4A9A-B79E-AF219FFB553B,iDigBio,south east corner of gulf of carpentaria,-16.783,140.73499,idigbio_geopoint_recovery,
+F9837F8C-BA61-4077-939B-1D33BE260A4C,ALA_echinodermata,"Mooloolaba, South Queensland",-26.68,153.12,locality_gazetteer_geocoding,3000.0
+F9C66334-451F-4867-BAF1-7ABE4A5CBD46,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+F9E65418-A3FA-4D34-978B-D67932DD9A10,ALA_echinodermata,"Lizard Island, off North Point",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+F9F255BB-1BDA-49EC-BCB2-96A8C6404225,ALA_echinodermata,"Waining Reef, 1st dive site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+FA27EF84-4E17-4912-93B6-AE965DEB56FA,ALA_echinodermata,"Lizard Island, Casuarina Beach",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+FB133786-5823-407F-A8E4-2E880C2B00A7,ALA_echinodermata,"Waining Reef, 2nd snorkeling site",-19.0,147.35,locality_gazetteer_geocoding,8000.0
+FB3BBE86-AA36-461F-8E2A-3F2D429BBE07,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+FBD6C631-26A0-4324-90CD-9FB5B90F819E,ALA_echinodermata,"Kirra Reef, 1 and a half miles North of Pt Danger",-28.16,153.54,locality_gazetteer_geocoding,3000.0
+FBE14E79-DF05-4A4F-8421-75E07848B632,ALA_echinodermata,"Lizard Island, Hicks Reef",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+FD140E55-B1B8-41A5-A857-34DB3FA5639A,ALA_echinodermata,Lizard Island,-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+FD5B0E22-293C-4DE1-86F8-12D1DB9F3366,iDigBio,south east corner of gulf of carpentaria,-17.17499,140.84166,idigbio_geopoint_recovery,
+FDD5927A-FFCB-4FF1-A251-EF1AC7F2BE55,ALA_echinodermata,"Lizard Island, Day Reef, station 1",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+FEE7F363-7402-408F-B524-A62D8399096E,ALA_echinodermata,Port Denison,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+FF9CD9C8-4843-4C26-8908-5464080317D6,iDigBio,"gulf of carpentaria, north-east of wallaby island",-13.5,140.666,idigbio_geopoint_recovery,
+HTTP://N2T.NET/ARK:/65665/3013D707A-6EE3-4B36-A3BD-5BAA80510ADB,ALA_echinodermata,"Torres Strait, Between Papua New Guinea And Queensland",-10.0,142.5,locality_gazetteer_geocoding,50000.0
+HTTP://N2T.NET/ARK:/65665/3041B6F8A-53AC-4414-BB65-684C9CC34C86,ALA_echinodermata,Port Molle,-20.2667,148.7,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/30B41447B-0D3D-4481-9F81-71F11FBFA23D,ALA_echinodermata,Claremont Island,-22.4,150.05,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/30C2FF390-1B2F-49F5-A29B-90A27F6C1846,GBIF_echinodermata,"Little Hope Island, Off Middle Of NE End Of Island",-22.45,150.07,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/30CB44BAB-E784-4368-92F7-1DD6A3B4FA4A,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/30D55D492-EEEB-40AB-AB6B-04648F5B1603,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/30DDDEC13-9A15-43ED-9AB3-35E8E00D50DF,ALA_echinodermata,"Great Barrier Reef, Hayman Island, Whitsunday Passage",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/319E56063-2FA0-4FE9-AE85-E72CE154184A,ALA_echinodermata,"Great Barrier Reef, Bowen",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/31A16C393-A999-49A7-A484-B01EFB4CEDBE,ALA_echinodermata,Townsville,-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/31F0E8AB0-81E1-4B78-AFEA-BCD2343FEC15,ALA_echinodermata,Endeavaur Reef,-15.45,145.32,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/320FA1805-845F-4828-BB3A-BEA00D30C892,GBIF_echinodermata,"Great Barrier Reef, Green Island, near Cairns",-16.76,145.97,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/331364FCA-A015-4C05-B577-9A88D6060BD0,ALA_echinodermata,"Mapoon, 10 Miles S.W. Of",-12.4667,141.8833,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/337BD75D3-64D8-4F5A-8433-B766B8ECDDA2,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/337C0FF90-4C81-405D-A5E7-B36921C1610A,ALA_echinodermata,"Caloundra, North Of Brisbane",-26.8,153.13,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/33848BD2B-F35A-42C2-A886-2F7DF4ABF080,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/339DCA6DE-EE48-4F0D-8CDB-8506AD9CF2F1,GBIF_echinodermata,Low Isles,-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/33B3F2A2D-1F67-40E7-87EF-7D0D53A3CCF4,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/33C2D3753-7D37-414A-8879-4AB4F8A1CB16,ALA_echinodermata,Port Molle,-20.2667,148.7,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/33C73D6A2-7A14-4312-BD60-2E75282C27F9,ALA_echinodermata,"Great Barrier Reef, Green Island, near Cairns",-16.76,145.97,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/33F397371-1D58-4D18-AC0B-4247832896A0,ALA_echinodermata,"Coral Gardens near Heron Island, Great Barrier Reef",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/341455C80-FFDE-4619-BA81-225FA012E2C7,ALA_echinodermata,"Great Barrier Reef, Fitzroy Island",-16.93,145.99,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/3443C6BDE-BBC8-4608-B871-52294B040FB6,GBIF_echinodermata,"Great Barrier Reef, Cumberland Islands, Hook Reef, northeast of Hayman Island",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3453C8C41-B75B-4F51-965E-01BDFF370497,ALA_echinodermata,Masthead Island,-23.5333,151.75,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/34A856347-2CB1-4E71-8F63-63345F4B93A1,ALA_echinodermata,Endeavaur Reef,-15.45,145.32,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/34C4A6630-8FDA-4DB6-98DF-DFBEB0F09727,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/34E803EE3-7B7E-44E3-BA24-02B9589B4564,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/34F087719-8D12-411C-8813-4B1EB300125D,ALA_echinodermata,Bowen,-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/35011C167-B94B-4C9B-A244-7AB7C6D7B1C6,ALA_echinodermata,"Wilson Island, Coral Reef Flat",-23.3,152.2333,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3525F4613-B0F1-46BD-AFF1-D9A96ABF94E5,ALA_echinodermata,"Great Barrier Reef, Fairfax Island",-23.8667,152.3667,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3554748DA-3728-495D-BDF2-7FF7F0F5CFFC,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3556B111A-C137-4455-BF40-0D17B9F54DB8,ALA_echinodermata,"Great Barrier Reef, Bowen",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3581662F4-648C-4C94-B9F7-A6A5B81172A9,ALA_echinodermata,Brampton Point Reef,-20.79,149.27,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3581C3BFC-994F-4E0E-8341-E16463983742,ALA_echinodermata,"Torres Strait, Murray Island",-9.9167,144.05,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/35F342FB0-E23D-4839-94BF-93AFFA30FE4D,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/35F712162-6D29-4D4B-A4A3-892F2752BE88,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/36402E0C9-7FD9-4C57-811B-A4151A262373,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/366419CDA-04D3-4FD8-8BDF-31563529882B,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3666B9C96-F353-4F94-BBFC-67EB5AADE403,GBIF_echinodermata,"Coral Gardens near Heron Island, Great Barrier Reef",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/370A6CA98-F26D-4CF0-AB5F-75EFD30D5779,ALA_echinodermata,"Magnetic Island, Horseshoe Bay, Off Townsville",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/37208325E-B8E3-4770-B054-319359EFC4A9,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/376C2E6DA-DA9A-4BA1-BA1C-DC958A2180B6,ALA_echinodermata,"Townsville, Patch Reef Off Of",-19.259,146.8169,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3789B9561-E47E-4770-8577-75BEB0123C3E,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/37A7712C1-4729-4199-93F8-E6F487E30000,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/37AD17E88-EC7D-41C1-88E3-A28F499FCD89,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3803A4273-1390-486F-8AEF-7E4DA38761E2,ALA_echinodermata,Albany Passage,-10.75,142.65,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3809DC725-7FD6-4701-9F0F-A8A6B29E92F4,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hook Reef, northeast of Hayman Island",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/381F24BB4-2A79-4D77-88B4-CA2FA0761B6D,ALA_echinodermata,Torres Strait,-10.0,142.5,locality_gazetteer_geocoding,50000.0
+HTTP://N2T.NET/ARK:/65665/383D3C303-333F-4540-9A37-70C1E24F921F,ALA_echinodermata,"Great Barrier Reef, Yonge Reef, Ocean Side",-14.58,145.63,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/388FB95B6-AA58-4F80-A259-F3B7957CEC5D,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/38ECABA0F-9B0D-4377-A51F-BAFE38E47F1C,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/38F1E93AF-AE6A-40C5-9C8D-08BE0F7A7609,ALA_echinodermata,"Great Barrier Reef, Capricorn Group, One Tree Island, Gladstone",-23.5028,152.0917,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/390AAC1AB-57DF-444C-8341-526DAD986F50,GBIF_echinodermata,"Coral Gardens near Heron Island, Great Barrier Reef",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/392B74C0E-5161-4243-A794-0CD40A2E0CBB,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hook Reef, northeast of Hayman Island",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/392F96A0B-F6F0-4528-8F58-44FE5D665328,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3954921C8-B8D9-49D9-947A-79F2F76D69ED,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hook Reef, northeast of Hayman Island",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/397804391-8CA7-493C-947D-673F0ECE6D79,GBIF_echinodermata,"Coral Gardens near Heron Island, Great Barrier Reef",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/39AEB8B73-1A2C-41D0-86E3-FB478A6FB85E,ALA_echinodermata,Endeavaur Reef,-15.45,145.32,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/39B0ACE2F-42C3-4065-B24F-D5B0712D3DC8,ALA_echinodermata,"Great Barrier Reef, Green Island, near Cairns",-16.76,145.97,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/39EBC4BCF-D3BD-4C6D-A008-449DB7D35DF5,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/39FA7EDF7-0BCD-42D5-9773-30BF6229391F,ALA_echinodermata,"Great Barrier Reef, Fairfax Island",-23.8667,152.3667,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3A3BFD97D-DFEE-48FB-8DFA-C9E5B8F75EFB,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3A4A09C89-EE38-417C-9B12-663BDD18F634,ALA_echinodermata,Port Curtis,-23.85,151.2667,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3A4F62B1D-462E-449D-994F-D366FEEDBED1,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3A5E3A62B-3619-4DFD-B763-7F4EC1C6A69F,ALA_echinodermata,"Great Barrier Reef, Green Island, near Cairns",-16.76,145.97,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/3A6F8FD50-051B-4EBD-BAAD-A062FEC3D2C3,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3A89EF9DF-A860-492C-853C-AF887F5EE893,ALA_echinodermata,Albany Passage,-10.75,142.65,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3A9120198-D652-469E-AE47-0EC33E1DF813,ALA_echinodermata,"Great Barrier Reef, Norwest Islet, Reef",-23.3,151.7167,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3AAEE870A-3C73-4142-A78B-EBDB4D6A9F17,ALA_echinodermata,"Great Barrier Reef, Capricorn Group, One Tree Island, Gladstone",-23.5028,152.0917,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/3AF129FE5-BD8F-4823-9E51-E70749F244F3,ALA_echinodermata,"Flat Top Island, Near Queensland",-21.13,149.22,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3AFE39374-4CD0-48F0-9A26-75C9C7CD124A,ALA_echinodermata,Brampton Reef,-20.79,149.27,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3B485EB7D-793A-4509-AE68-2864F76F8E82,ALA_echinodermata,"Torres Strait, Between Papua New Guinea And Queensland",-10.0,142.5,locality_gazetteer_geocoding,50000.0
+HTTP://N2T.NET/ARK:/65665/3B99EBC53-EE61-49C5-BE49-A71475A87B89,GBIF_echinodermata,20 Ft Off Endeavaur Reef At Cook's Wreck Site,-15.45,145.32,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3BD0EEC83-6BB6-4102-A7C4-689EB0C8FC56,ALA_echinodermata,"Coral Gardens near Heron Island, Great Barrier Reef",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/3C07649EA-EDD8-46CB-B0A6-AD2BE6266FA9,ALA_echinodermata,"Great Barrier Reef, Fitzroy Island",-16.93,145.99,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/3C2D062BC-AB5A-4522-976E-EC42E98BBECB,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3C32AA03E-11C3-4196-9932-1ABD37BA18C7,ALA_echinodermata,"Little Hope Island, Off NE Edge",-22.45,150.07,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3C3B653BB-6C34-4826-A0B7-63C4675D187D,ALA_echinodermata,"Great Barrier Reef, Cumberland Islands, Hayman Island, on coral reef flat",-20.05,148.8833,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3C478158F-2A84-4CFB-A35B-79B5B88F5F27,ALA_echinodermata,"Torres Strait, Thursday Island",-10.5833,142.2167,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3CBC9537A-4280-49D8-A733-BA73EAD15DFC,ALA_echinodermata,Endeavaur Reef,-15.45,145.32,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3CC652177-AB13-468A-89B5-2409F6EDF737,ALA_echinodermata,"Little Hope Island, Off NE End Of Island",-22.45,150.07,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3CD114166-3E0F-4FEA-999B-DF80101512E5,ALA_echinodermata,"Bowen, Port Denison, Near Bowen",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3CE7ED189-0E07-4B7E-8505-44685223F467,ALA_echinodermata,"Great Barrier Reef, Norwest Islet, Reef",-23.3,151.7167,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3D05DFF4C-3933-4E90-96B1-B0A09BEE9C8A,GBIF_echinodermata,"Great Barrier Reef, Davies Reef",-18.83,147.63,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3D1106F9C-F42A-497E-ACDE-72BBC52AF254,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3D32F9762-FF06-4BFF-A4AB-66145FDD1EBB,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3D3C52EEC-3AC6-4746-A3D9-8A4F8583FD5C,ALA_echinodermata,"Great Barrier Reef, Green Island, near Cairns",-16.76,145.97,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/3D3D5C3AA-E43C-4F56-8CEF-0CA5311F3C5D,ALA_echinodermata,Brampton Reef,-20.79,149.27,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3D88F8533-75E5-4F51-9CBE-BA87BF6885D3,ALA_echinodermata,Port Molle,-20.2667,148.7,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3E004E6D9-C767-437D-A70B-7A2A5B3B0B22,ALA_echinodermata,"Great Barrier Reef, Davis Reef, Reef Front At 'Hole No 1'",-18.83,147.63,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3E372BC4F-E984-4541-9DCF-822E4898DA4E,ALA_echinodermata,"Mapoon, 10 Miles S.W. Of",-12.4667,141.8833,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3E9655063-83D4-4BEA-B774-F20E2BD140DA,ALA_echinodermata,Brampton Reef,-20.79,149.27,locality_gazetteer_geocoding,5000.0
+HTTP://N2T.NET/ARK:/65665/3F2F48FA6-77F8-4F0B-89E2-C94D1C8AA653,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3F356BE96-E481-41E6-88C0-93D236B00928,ALA_echinodermata,"Coral Gardens near Heron Island, Great Barrier Reef",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+HTTP://N2T.NET/ARK:/65665/3F37C77E4-BA8A-4632-A070-B1F1F264A0CB,ALA_echinodermata,Low Isles,-16.3833,145.5667,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3F4AAE1E5-ABA4-45B7-BE41-65A285B5FD1B,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+HTTP://N2T.NET/ARK:/65665/3FCD8CDB2-E743-4ADA-96BE-D358479B66ED,ALA_echinodermata,"Bowen, Port Denison",-20.0167,148.25,locality_gazetteer_geocoding,3000.0
+MCZ:IZ:CRI-508,ALA_echinodermata,"Murray Island, Mer.",-9.9167,144.05,locality_gazetteer_geocoding,3000.0
+MCZ:IZ:CRI-559,ALA_echinodermata,"Murray Island, Mer.",-9.9167,144.05,locality_gazetteer_geocoding,3000.0
+MCZ:IZ:CRI-560,ALA_echinodermata,"Murray Island, Mer.",-9.9167,144.05,locality_gazetteer_geocoding,3000.0
+MCZ:IZ:CRI-563,ALA_echinodermata,"Murray Island, Mer.",-9.9167,144.05,locality_gazetteer_geocoding,3000.0
+MCZ:IZ:ECH-4166,ALA_echinodermata,"Murray Island, Mer.",-9.9167,144.05,locality_gazetteer_geocoding,3000.0
+MCZ:IZ:HOL-278,ALA_echinodermata,"Queensland, Flinders or Claremont Islands",-22.4,150.05,locality_gazetteer_geocoding,5000.0
+MCZ:IZ:OPH-4653,iDigBio,"murray island, mer.",-9.933,144.066,idigbio_geopoint_recovery,
+MCZ:IZ:OPH-5339,iDigBio,"mer, murray island",-9.9186,144.04939,idigbio_geopoint_recovery,
+URN:CATALOG:CAS:IZ:428750,ALA_echinodermata,Lucinda,-18.52,146.35,locality_gazetteer_geocoding,3000.0
+URN:CATALOG:CAS:IZ:428752,ALA_echinodermata,Kurrimine,-17.75,146.1,locality_gazetteer_geocoding,3000.0
+URN:CATALOG:CAS:IZ:428753,ALA_echinodermata,Swain Reefs,-21.65,152.25,locality_gazetteer_geocoding,20000.0
+URN:CATALOG:CAS:IZ:428755,ALA_echinodermata,15 km N of Proserpine,-20.4,148.5833,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q003077,ALA_echinodermata,East of Sweers Island,-17.1333,139.6,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q003087,ALA_echinodermata,"Off Weipa, Gulf of Carpentaria",-12.6833,141.8667,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q003305,ALA_echinodermata,"Off Weipa, Gulf of Carpentaria",-12.6833,141.8667,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005066,ALA_echinodermata,"MacGillivray's Reef, off Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005067,ALA_echinodermata,"Between Palfrey & South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005068,ALA_echinodermata,"North end of Watsons Bay, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005069,ALA_echinodermata,"North end of Watsons Bay, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005070,ALA_echinodermata,"Edge of lagoon, off Palfrey Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005071,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005072,ALA_echinodermata,"SE of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005073,ALA_echinodermata,"SE of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005074,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005075,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005076,ALA_echinodermata,"W side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005077,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005078,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005079,ALA_echinodermata,"SE of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005080,ALA_echinodermata,"MacGillivray's Reef, off Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005081,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005083,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005085,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005086,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005087,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005088,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005089,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005090,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005091,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005092,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005093,ALA_echinodermata,"SE of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005094,ALA_echinodermata,"Turtle Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005095,ALA_echinodermata,"Turtle Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005096,ALA_echinodermata,"MacGillivray's Reef, off Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005097,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005098,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005099,ALA_echinodermata,"SE side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005105,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005106,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005107,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005108,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005109,ALA_echinodermata,"North end of Watsons Bay, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005110,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005111,ALA_echinodermata,"Edge of lagoon, off Palfrey Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005112,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005113,ALA_echinodermata,Between Lizard and Palfrey Island,-14.7,145.45,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005114,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005115,ALA_echinodermata,"Turtle Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005116,ALA_echinodermata,"N side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005117,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005118,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005119,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005121,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005122,ALA_echinodermata,"SE side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005123,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005124,ALA_echinodermata,"Turtle Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005125,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005126,ALA_echinodermata,"W side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005127,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005128,ALA_echinodermata,"SE side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005129,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005130,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005131,ALA_echinodermata,"MacGillivray's Reef, off Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005132,ALA_echinodermata,"MacGillivray's Reef, off Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005133,ALA_echinodermata,"North end of Watsons Bay, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005134,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005135,ALA_echinodermata,"North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005136,ALA_echinodermata,"SE side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005137,ALA_echinodermata,"SE of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005138,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005139,ALA_echinodermata,"S side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005140,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005141,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005142,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005143,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005144,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005145,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005146,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005147,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005148,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005149,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005150,ALA_echinodermata,"Lagoon edge, off Palfry Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005151,ALA_echinodermata,"Edge of lagoon, off Palfrey Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005152,ALA_echinodermata,"North end of Watsons Bay, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005153,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005154,ALA_echinodermata,"S of Crystal Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005155,ALA_echinodermata,"S side of South Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005156,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005157,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005158,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005277,ALA_echinodermata,"Turtle Beach, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005278,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005279,ALA_echinodermata,"Edge of lagoon, off Palfrey Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005311,ALA_echinodermata,"E end Mac's Reef, near Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005312,ALA_echinodermata,"E end Mac's Reef, near Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005340,ALA_echinodermata,"Between South & Bird Islands, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005350,ALA_echinodermata,"N side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005358,ALA_echinodermata,"N side of North Point, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005393,ALA_echinodermata,"North end of Watsons Bay, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005422,ALA_echinodermata,"MacGillivray's Reef, off Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005426,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005427,ALA_echinodermata,"Granite Bluff, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q005428,ALA_echinodermata,"Edge of lagoon, off Palfrey Island, Lizard Island",-14.677,145.4675,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q006171,ALA_echinodermata,Between Lizard and Palfrey Island,-14.7,145.45,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q006172,ALA_echinodermata,Between Lizard and Palfrey Island,-14.7,145.45,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q006569,ALA_echinodermata,Cairns,-16.9203,145.771,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:MAGNT:ECHINODERM:Q006573,ALA_echinodermata,Cairns,-16.9203,145.771,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:NMV:INVERTEBRATES:PRESERVEDSPECIMEN:F202996,ALA_echinodermata,"Cockle Bay, Magnetic Island",-19.15,146.84,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:NMV:INVERTEBRATES:PRESERVEDSPECIMEN:F203013,ALA_echinodermata,Masthead Island,-23.5333,151.75,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:NMV:INVERTEBRATES:PRESERVEDSPECIMEN:F204054,ALA_echinodermata,"Masthead Island, Capricorn Group",-23.5333,151.75,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:NMV:INVERTEBRATES:PRESERVEDSPECIMEN:F204084,ALA_echinodermata,Masthead Island,-23.5333,151.75,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:NMV:INVERTEBRATES:PRESERVEDSPECIMEN:F284019,ALA_echinodermata,Off Cairns,-16.9203,145.771,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:NMV:INVERTEBRATES:PRESERVEDSPECIMEN:F284085,ALA_echinodermata,"Heron Island Resort, North Queensland",-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G218354,ALA_other,"Green Island, east of, Moreton Bay",-27.2,153.35,locality_gazetteer_geocoding,10000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G228952,ALA_other,"outside Moreton Bay, NE of lighthouse",-27.2,153.35,locality_gazetteer_geocoding,10000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G228953,ALA_other,Heron Island/Wistari Reef,-23.4423,151.9148,locality_gazetteer_geocoding,2000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233740,ALA_other,"Middle Banks, N Moreton Bay",-27.2,153.35,locality_gazetteer_geocoding,10000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233798,ALA_other,Torres Strait,-10.0,142.5,locality_gazetteer_geocoding,50000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233799,ALA_other,Caloundra,-26.8,153.13,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233803,ALA_other,Davies Reef,-18.83,147.63,locality_gazetteer_geocoding,5000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233812,ALA_other,Torres Strait,-10.0,142.5,locality_gazetteer_geocoding,50000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233813,ALA_other,Torres Strait,-10.0,142.5,locality_gazetteer_geocoding,50000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233814,ALA_other,Torres Strait,-10.0,142.5,locality_gazetteer_geocoding,50000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233815,ALA_other,Swain Reefs,-21.65,152.25,locality_gazetteer_geocoding,20000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233816,ALA_other,off Cape Moreton,-27.03,153.47,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233831,ALA_other,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G233832,ALA_other,Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G2613,ALA_other,"Suttons Beach, Redcliffe",-27.23,153.11,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G554,ALA_other,Sandgate,-27.32,153.07,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G686,ALA_other,Sandgate,-27.32,153.07,locality_gazetteer_geocoding,3000.0
+URN:LSID:OZCAM.TAXONOMY.ORG.AU:QM:OTHERINVERTS:G8528,ALA_other,?Moreton Bay,-27.2,153.35,locality_gazetteer_geocoding,10000.0
