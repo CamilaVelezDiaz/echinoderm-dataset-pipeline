@@ -44,6 +44,10 @@ The pipeline expects 13 raw source files that must be downloaded separately. Sou
 
 The direct CMS exports supplied by QMT (11 & 12) and AM (13) were used with written permission from the depositing institutions. The original export files themselves are not redistributed through this repository; the derived occurrence records are included in the deposited dataset with permission of both institutions, acknowledged above.
 
+## Obtaining the source data. 
+
+Aggregator downloads can be retrieved via the DOIs/queries listed in Table 3 of the data paper (ALA, GBIF, CSIRO NCMI, OZCAM, iDigBio, OBIS). The Australian Museum and Queensland Museum Tropics CMS exports are not publicly available; they can be requested from the holding institutions. Without them, the pipeline runs on the remaining sources, but the records unique to those exports will not be reproduced.
+
 ## How to run
 
 1. **Clone the repository**
