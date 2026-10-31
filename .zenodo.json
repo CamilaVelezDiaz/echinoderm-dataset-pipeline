@@ -28,6 +28,14 @@
     "data integration",
     "occurrence records"
   ],
+    "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23639651",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
   "license": "MIT",
   "access_right": "open",
   "upload_type": "software",
