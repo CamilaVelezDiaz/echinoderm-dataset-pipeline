@@ -20,7 +20,7 @@ authors:
     orcid: https://orcid.org/0000-0002-9818-7429
     affiliation: James Cook University
 license: MIT
-repository-code: Dataset DOi zenodo
+repository-code: https://github.com/CamilaVelezDiaz/echinoderm-dataset-pipeline
 url: https://github.com/CamilaVelezDiaz/echinoderm-dataset-pipeline
 keywords:
   - Echinodermata
