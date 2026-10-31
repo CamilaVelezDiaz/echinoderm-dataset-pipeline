@@ -15,6 +15,8 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 | `sessionInfo_01.txt` | R version and package versions used to produce 01_echinoderm_dataset_integration.R v1.0.0. |
 | `sessionInfo_02.txt` | R version and package versions used to produce 02_echinoderm_post_processing.R v1.0.0. |
 | `.zenodo.json` | Zenodo deposit metadata. |
+| `recovered_coordinates.csv` | Coordinates recovered from iDigBio geoPoint and gazetteer geocoding (read by script 02, Section 1b). |
+| `coord_manual_review_decisions.csv` | Manual coordinate review decisions (record_key, decided latitude/longitude, basis) applied by script 02. |
 
 ## Requirements
 
@@ -24,7 +26,8 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 
 ## Data sources 
 
-The pipeline expects 13 raw source files that must be downloaded separately. Sources include:
+The pipeline expects 13 raw source files that must be downloaded separately. File paths are relative to data-raw/.
+Sources include:
 
 | Number | File name |
 |------|---------|
@@ -42,11 +45,9 @@ The pipeline expects 13 raw source files that must be downloaded separately. Sou
 | `12` | MQT - Stefano/CIDARIS_Echinoderms.xlsx |
 | `13` | AM ECHINO DEPTH/26-015 Velez.csv |
 
-The direct CMS exports supplied by QMT (11 & 12) and AM (13) were used with written permission from the depositing institutions. The original export files themselves are not redistributed through this repository; the derived occurrence records are included in the deposited dataset with permission of both institutions, acknowledged above.
-
 ## Obtaining the source data. 
 
-Aggregator downloads can be retrieved via the DOIs/queries listed in Table 3 of the data paper (ALA, GBIF, CSIRO NCMI, OZCAM, iDigBio, OBIS). The Australian Museum and Queensland Museum Tropics CMS exports are not publicly available; they can be requested from the holding institutions. Without them, the pipeline runs on the remaining sources, but the records unique to those exports will not be reproduced.
+Aggregator downloads can be retrieved via the DOIs/queries listed in Table 3 of the data paper (ALA, GBIF, CSIRO NCMI, OZCAM, iDigBio, OBIS). The Australian Museum and Queensland Museum Tropics CMS exports (files 11–13) are not publicly available and can be requested from the holding institutions. The scripts expect all 13 files; to run without files 11–13, remove their read and standardisation blocks in 01_echinoderm_dataset_integration.R and their entries in the bind_rows() call. Records unique to those exports will then not be reproduced.
 
 ## How to run
 
