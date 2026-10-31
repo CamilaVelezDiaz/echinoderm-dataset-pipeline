@@ -24,18 +24,25 @@ R workflow for the integrated echinoderm occurrence dataset for northeast Austra
 
 ## Data sources 
 
-The pipeline expects 13 raw source files that must be downloaded separately. The exact download dates used to produce the deposited dataset are listed in Table 3 of the Biodiversity Data Journal descriptor. Sources include:
+The pipeline expects 13 raw source files that must be downloaded separately. Sources include:
 
-    Atlas of Living Australia (ALA) — 3 downloads
-    Global Biodiversity Information Facility (GBIF) — 2 downloads
-    CSIRO National Collections and Marine Infrastructure (CSIRO NCMI) — 2 downloads
-    Ocean Biodiversity Information System (OBIS) - 1 download
-    Online Zoological Collections of Australian Museums (OZCAM) - 1 download
-    Integrated Digitized Biocollections (iDigBio) - 1 download
-    Queensland Museum Tropics (QMT) — 2 direct CMS exports
-    Australian Museum (AM) — 1 direct CMS export
+| Number | File name |
+|------|---------|
+| `1` | GBIF Queensland Museum/occurrence.txt |
+| `2` | GIBF - Echinodermata data_Au/occurrence.txt |
+| `3` | ALA - Echinodermata dat/records-2026-04-10.csv |
+| `4` | records Atlas - Other invertebrates collection/records-2026-03-13.tsv |
+| `5` | Record Atlas GBRBD/records-2026-03-13.tsv |
+| `6` | Csiro- GBRSBD/occurrence.txt |
+| `7` | Csiro-QLDM other invertebrates - marine records/occurrence.txt |
+| `8` | iDigBio data/occurrence.csv |
+| `9` | OZCAM ALA data/records-2026-04-03.csv |
+| `10` | OBIS/obis_echi_snapshot_2026-05-25.csv |
+| `11` | Cidaris - Michela/MTQ echinoderms - registered - June 2021 final.xlsx |
+| `12` | MQT - Stefano/CIDARIS_Echinoderms.xlsx |
+| `13` | AM ECHINO DEPTH/26-015 Velez.csv |
 
-The direct CMS exports supplied by QMT (2) and AM (1) were used with written permission from the depositing institutions. The original export files themselves are not redistributed through this repository; the derived occurrence records are included in the deposited dataset with permission of both institutions, acknowledged above.
+The direct CMS exports supplied by QMT (11 & 12) and AM (13) were used with written permission from the depositing institutions. The original export files themselves are not redistributed through this repository; the derived occurrence records are included in the deposited dataset with permission of both institutions, acknowledged above.
 
 ## How to run
 
